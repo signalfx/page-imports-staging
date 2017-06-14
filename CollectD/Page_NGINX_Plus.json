@@ -955,7 +955,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "server=host:integration-test-mesos-0.27.0-2", "server_zone=server_zone_name:" ]
+    "variables" : null
   },
   "sf_type" : "Dashboard",
   "sf_uiModel" : {
@@ -3948,7 +3948,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "server=host:integration-test-mesos-0.27.0-2", "upstream_name=upstream_name:" ]
+    "variables" : null
   },
   "sf_type" : "Dashboard",
   "sf_uiModel" : {
