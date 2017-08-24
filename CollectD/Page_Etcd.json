@@ -45,7 +45,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "cluster=cluster:", "instance=plugin_instance:" ]
+    "variables" : null
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -820,9 +820,9 @@
   "sf_discoverySelectors" : [ "_exists_:host", "sf_key:host" ],
   "sf_filterAlias" : {
     "variables" : [ {
-      "alias" : "cluster",
-      "description" : "",
-      "dimension" : "cluster",
+      "alias" : "host",
+      "description" : "host you want to monitor",
+      "dimension" : "host",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
@@ -830,9 +830,9 @@
       "restricted" : false,
       "value" : ""
     }, {
-      "alias" : "host",
-      "description" : "host you want to monitor",
-      "dimension" : "host",
+      "alias" : "cluster",
+      "description" : "",
+      "dimension" : "cluster",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
@@ -846,7 +846,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "cluster=cluster:", "host=host:" ]
+    "variables" : [ "host=host:", "cluster=cluster:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -2481,7 +2481,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "cluster=cluster:" ]
+    "variables" : null
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
