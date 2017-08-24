@@ -15,7 +15,7 @@
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "etcd instance",
   "sf_description" : "An overview of an etcd instance",
-  "sf_discoveryQuery" : "",
+  "sf_discoveryQuery" : "plugin:etcd",
   "sf_discoverySelectors" : [ "sf_key:host" ],
   "sf_filterAlias" : {
     "variables" : [ {
@@ -45,7 +45,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : null
+    "variables" : [ "cluster=cluster:", "instance=plugin_instance:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -820,9 +820,9 @@
   "sf_discoverySelectors" : [ "_exists_:host", "sf_key:host" ],
   "sf_filterAlias" : {
     "variables" : [ {
-      "alias" : "host",
-      "description" : "host you want to monitor",
-      "dimension" : "host",
+      "alias" : "cluster",
+      "description" : "",
+      "dimension" : "cluster",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
@@ -830,9 +830,9 @@
       "restricted" : false,
       "value" : ""
     }, {
-      "alias" : "cluster",
-      "description" : "",
-      "dimension" : "cluster",
+      "alias" : "host",
+      "description" : "host you want to monitor",
+      "dimension" : "host",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
@@ -846,7 +846,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "host=host:", "cluster=cluster:" ]
+    "variables" : [ "cluster=cluster:", "host=host:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -2461,7 +2461,7 @@
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "etcd cluster",
   "sf_description" : "An overview of your etcd cluster",
-  "sf_discoveryQuery" : "",
+  "sf_discoveryQuery" : "plugin:etcd",
   "sf_discoverySelectors" : [ "sf_key:host" ],
   "sf_filterAlias" : {
     "variables" : [ {
@@ -2481,7 +2481,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : null
+    "variables" : [ "cluster=cluster:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
