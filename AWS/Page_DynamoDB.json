@@ -2,17 +2,17 @@
   "marshallScope" : 2
 }, {
   "marshallId" : 1,
-  "sf_service" : "DynamoDB",
+  "sf_service" : "AWS DynamoDB",
   "sf_type" : "Service"
 }, {
   "marshallId" : 2,
   "marshallMemberOf" : [ 1 ],
-  "sf_page" : "DynamoDB",
+  "sf_page" : "AWS DynamoDB",
   "sf_type" : "Page"
 }, {
   "marshallId" : 3,
   "marshallMemberOf" : [ 2 ],
-  "sf_dashboard" : "DynamoDB",
+  "sf_dashboard" : "AWS DynamoDB",
   "sf_description" : "Amazon DynamoDB is a fully managed NoSQL database service that provides fast and predictable performance with seamless scalability. DynamoDB lets you offload the administrative burdens of operating and scaling a distributed database, so that you don't have to worry about hardware provisioning, setup and configuration, replication, software patching, or cluster scaling.",
   "sf_filterAlias" : {
     "variables" : [ ]
