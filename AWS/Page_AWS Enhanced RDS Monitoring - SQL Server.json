@@ -2,14 +2,14 @@
   "marshallScope" : 2
 }, {
   "marshallId" : 1,
-  "sf_description" : “Basic dashboard group for enhanced RDS metrics from SQL Server instances”,
-  "sf_service" : “AWS Enhanced RDS Monitoring - SQL Server",
+  "sf_description" : "Basic dashboard group for enhanced RDS metrics from SQL Server instances",
+  "sf_service" : "AWS Enhanced RDS Monitoring - SQL Server",
   "sf_type" : "Service"
 }, {
   "marshallId" : 2,
   "marshallMemberOf" : [ 1 ],
   "sf_description" : "Basic dashboard group for enhanced RDS metrics from SQL Server instances",
-  "sf_page" : “AWS Enhanced RDS Monitoring - SQL Server",
+  "sf_page" : "AWS Enhanced RDS Monitoring - SQL Server",
   "sf_type" : "Page"
 }, {
   "marshallId" : 3,
