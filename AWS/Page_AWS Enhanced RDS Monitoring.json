@@ -2,14 +2,14 @@
   "marshallScope" : 2
 }, {
   "marshallId" : 1,
-  "sf_description" : “Basic dashboard group for enhanced RDS metrics”,
-  "sf_service" : “AWS Enhanced RDS Monitoring”,
+  "sf_description" : "Basic dashboard group for enhanced RDS metrics",
+  "sf_service" : "AWS Enhanced RDS Monitoring",
   "sf_type" : "Service"
 }, {
   "marshallId" : 2,
   "marshallMemberOf" : [ 1 ],
   "sf_description" : "Basic dashboard group for enhanced RDS metrics",
-  "sf_page" : “AWS Enhanced RDS Monitoring”,
+  "sf_page" : "AWS Enhanced RDS Monitoring",
   "sf_type" : "Page"
 }, {
   "marshallId" : 3,
