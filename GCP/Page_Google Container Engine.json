@@ -105,7 +105,7 @@
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Minor and Major Page Faults per Cluster",
   "sf_chartIndex" : 1508182132305,
-  "sf_description" : "",
+  "sf_description" : "major page faults indicate a page had to be loaded from disk",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -1075,7 +1075,7 @@
   "marshallMemberOf" : [ 10 ],
   "sf_chart" : "Memory Utilization %",
   "sf_chartIndex" : 1507054639463,
-  "sf_description" : "bytes used / bytes total",
+  "sf_description" : "how close to max is the container running - bytes used / bytes total",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -1259,7 +1259,7 @@
   "marshallMemberOf" : [ 10 ],
   "sf_chart" : "Memory Page Faults Count",
   "sf_chartIndex" : 1507054638596,
-  "sf_description" : "",
+  "sf_description" : "major page faults indicate a page had to be loaded from disk",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -1849,7 +1849,7 @@
   "marshallMemberOf" : [ 16 ],
   "sf_chart" : "Major Page Faults per Container",
   "sf_chartIndex" : 1508164302150,
-  "sf_description" : "",
+  "sf_description" : "major page faults indicate a page had to be loaded from disk",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -2110,7 +2110,7 @@
   "marshallMemberOf" : [ 16 ],
   "sf_chart" : "Memory Usage per Container",
   "sf_chartIndex" : 1508164302151,
-  "sf_description" : "",
+  "sf_description" : "measured in bytes",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -2197,9 +2197,9 @@
 }, {
   "marshallId" : 22,
   "marshallMemberOf" : [ 16 ],
-  "sf_chart" : "Disk Bytes Used per Container",
+  "sf_chart" : "Disk Used per Container",
   "sf_chartIndex" : 1508164302148,
-  "sf_description" : "",
+  "sf_description" : "measured in bytes",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
