@@ -2795,7 +2795,7 @@
 }, {
   "marshallId" : 20,
   "marshallMemberOf" : [ 16 ],
-  "sf_chart" : "Network IO Packets",
+  "sf_chart" : "Network I/O Packets",
   "sf_chartIndex" : 1506974770988,
   "sf_description" : "",
   "sf_type" : "Chart",
@@ -3087,7 +3087,7 @@
 }, {
   "marshallId" : 22,
   "marshallMemberOf" : [ 16 ],
-  "sf_chart" : "Disk IO Bytes/Min",
+  "sf_chart" : "Disk I/O Bytes / min",
   "sf_chartIndex" : 1506976392519,
   "sf_description" : "",
   "sf_type" : "Chart",
@@ -3227,7 +3227,7 @@
 }, {
   "marshallId" : 23,
   "marshallMemberOf" : [ 16 ],
-  "sf_chart" : "Network IO Bytes/Min",
+  "sf_chart" : "Network I/O Bytes / min",
   "sf_chartIndex" : 1507040844023,
   "sf_description" : "",
   "sf_type" : "Chart",
