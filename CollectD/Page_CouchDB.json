@@ -21,7 +21,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "Cluster",
-      "description" : "null",
+      "description" : null,
       "dimension" : "Cluster",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -40,7 +40,7 @@
       "relative" : true,
       "start" : "-15m"
     },
-    "variables" : [ "Cluster=Cluster:CouchDB-Cluster-ec2" ]
+    "variables" : [ "Cluster=Cluster:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -2547,16 +2547,6 @@
   "sf_discoverySelectors" : [ "sf_key:host" ],
   "sf_filterAlias" : {
     "variables" : [ {
-      "alias" : "Cluster",
-      "description" : null,
-      "dimension" : "Cluster",
-      "globalScope" : false,
-      "preferredSuggestions" : [ ],
-      "replaceOnly" : false,
-      "required" : false,
-      "restricted" : false,
-      "value" : ""
-    }, {
       "alias" : "Node",
       "description" : null,
       "dimension" : "node",
@@ -2573,7 +2563,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "Cluster=Cluster:CouchDB-Cluster-ec2", "Node=node:couchdb@couchdb1" ]
+    "variables" : [ "Node=node:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
