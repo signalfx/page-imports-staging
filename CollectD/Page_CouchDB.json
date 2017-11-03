@@ -35,11 +35,7 @@
   "sf_savedFilters" : {
     "density" : 0.0,
     "sources" : null,
-    "time" : {
-      "end" : "Now",
-      "relative" : true,
-      "start" : "-15m"
-    },
+    "time" : null,
     "variables" : [ "Cluster=Cluster:" ]
   },
   "sf_selectedEventOverlays" : [ ],
@@ -2547,8 +2543,18 @@
   "sf_discoverySelectors" : [ "sf_key:host" ],
   "sf_filterAlias" : {
     "variables" : [ {
+      "alias" : "Cluster",
+      "description" : "",
+      "dimension" : "Cluster",
+      "globalScope" : false,
+      "preferredSuggestions" : [ ],
+      "replaceOnly" : false,
+      "required" : false,
+      "restricted" : false,
+      "value" : ""
+    }, {
       "alias" : "Node",
-      "description" : null,
+      "description" : "null",
       "dimension" : "node",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -2563,7 +2569,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "Node=node:" ]
+    "variables" : [ "Cluster=Cluster:", "Node=node:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -3815,14 +3821,34 @@
   "sf_discoveryQuery" : "plugin:couchdb",
   "sf_discoverySelectors" : [ "_exists_:host", "sf_key:host" ],
   "sf_filterAlias" : {
-    "variables" : [ ]
+    "variables" : [ {
+      "alias" : "Host",
+      "description" : "Hostname to filter CouchDB nodes running on it",
+      "dimension" : "host",
+      "globalScope" : false,
+      "preferredSuggestions" : [ ],
+      "replaceOnly" : false,
+      "required" : false,
+      "restricted" : false,
+      "value" : ""
+    }, {
+      "alias" : "Cluster",
+      "description" : "Filter to CouchDB nodes running on specified cluster",
+      "dimension" : "Cluster",
+      "globalScope" : false,
+      "preferredSuggestions" : [ ],
+      "replaceOnly" : false,
+      "required" : false,
+      "restricted" : false,
+      "value" : ""
+    } ]
   },
   "sf_isLocked" : false,
   "sf_savedFilters" : {
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : null
+    "variables" : [ "Host=host:", "Cluster=Cluster:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
