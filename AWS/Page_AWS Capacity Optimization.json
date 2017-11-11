@@ -16,7 +16,8 @@
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "2. EC2 Cost & Usage Details",
   "sf_description" : "Default dashboard.",
-  "sf_discoveryQuery" : "cloud_provider_service:EC2.Instances AND cloud_provider:aws",
+  "sf_discoveryQuery" : "",
+  "sf_discoverySelectors" : [ "cloud_provider_service:EC2.Instances", "cloud_provider:aws" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
@@ -2843,6 +2844,7 @@
   "sf_dashboard" : "3. EC2 Cost & Usage Patterns",
   "sf_description" : "",
   "sf_discoveryQuery" : "cloud_provider_service:EC2.Instances AND cloud_provider:aws",
+  "sf_discoverySelectors" : [ "cloud_provider_service:EC2.Instances", "cloud_provider:aws" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
@@ -3477,7 +3479,8 @@
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "1. EC2 Cost Optimization",
   "sf_description" : "Default dashboard.",
-  "sf_discoveryQuery" : "cloud_provider_service:EC2.Instances AND cloud_provider:aws",
+  "sf_discoveryQuery" : "",
+  "sf_discoverySelectors" : [ "cloud_provider_service:EC2.Instances", "cloud_provider:aws" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
