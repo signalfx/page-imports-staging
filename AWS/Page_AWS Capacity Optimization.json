@@ -4056,20 +4056,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -4105,7 +4091,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "cpu.utilization - Mean(1d) - Sum by host - Exclude x >= 50",
+      "name" : "cpu.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "cpu.utilization",
@@ -4120,23 +4106,9 @@
         "aliases" : { },
         "extrapolationPolicy" : "NULL_EXTRAPOLATION",
         "maxExtrapolations" : -1,
-        "rollupPolicy" : null
+        "rollupPolicy" : "AVERAGE_ROLLUP"
       },
       "dataManipulations" : [ {
-        "direction" : {
-          "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
         "direction" : {
           "options" : {
             "aggregateGroupBy" : [ {
@@ -4174,7 +4146,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "memory.utilization - Mean(1d) - Sum by host - Exclude x >= 50",
+      "name" : "memory.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "memory.utilization",
@@ -4189,7 +4161,7 @@
         "aliases" : { },
         "extrapolationPolicy" : "NULL_EXTRAPOLATION",
         "maxExtrapolations" : -1,
-        "rollupPolicy" : null
+        "rollupPolicy" : "AVERAGE_ROLLUP"
       },
       "dataManipulations" : [ {
         "direction" : {
@@ -4204,21 +4176,23 @@
         },
         "fn" : {
           "options" : { },
-          "type" : "MEAN"
+          "type" : "MAX"
         },
         "showMe" : false
       }, {
         "direction" : {
           "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1d",
-            "unit" : "d"
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
           },
-          "type" : "transformation"
+          "type" : "aggregation"
         },
         "fn" : {
           "options" : { },
-          "type" : "MEAN"
+          "type" : "SUM"
         },
         "showMe" : false
       }, {
@@ -4240,26 +4214,10 @@
           "type" : "EXCLUDE"
         },
         "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
-            "aggregateGroupBy" : [ {
-              "value" : "host"
-            } ],
-            "collapseGroups" : false,
-            "transformTimeRange" : null
-          },
-          "type" : "aggregation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "SUM"
-        },
-        "showMe" : false
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "disk.utilization - Mean by host - Mean(1d) - Exclude x >= 50 - Sum by host",
+      "name" : "disk.utilization - Maximum by host - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "disk.utilization",
@@ -4362,10 +4320,11 @@
       "disableThrottle" : true,
       "hideTimestamp" : false,
       "legendColumnConfiguration" : null,
+      "maxDelay" : null,
       "range" : -900000,
       "rangeEnd" : null,
       "sortPreference" : "",
-      "updateInterval" : 300000,
+      "updateInterval" : 3600000,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
         "max" : null,
@@ -4379,8 +4338,8 @@
     },
     "currentUniqueKey" : 8,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 17,
-    "uiHelperValue" : "##CHARTID##_17"
+    "revisionNumber" : 19,
+    "uiHelperValue" : "##CHARTID##_19"
   }
 }, {
   "marshallId" : 29,
@@ -4400,20 +4359,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -4449,7 +4394,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "cpu.utilization - Mean(1d) - Sum by host - Exclude x >= 50",
+      "name" : "cpu.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "cpu.utilization",
@@ -4469,20 +4414,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -4518,7 +4449,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "memory.utilization - Mean(1d) - Sum by host - Exclude x >= 50",
+      "name" : "memory.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "memory.utilization",
@@ -4548,21 +4479,7 @@
         },
         "fn" : {
           "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
+          "type" : "MAX"
         },
         "showMe" : false
       }, {
@@ -4603,7 +4520,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "disk.utilization - Mean by host - Mean(1d) - Exclude x >= 50 - Sum by host",
+      "name" : "disk.utilization - Maximum by host - Exclude x >= 50 - Sum by host",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "disk.utilization",
@@ -4763,7 +4680,7 @@
       "range" : -900000,
       "rangeEnd" : null,
       "sortPreference" : "",
-      "updateInterval" : 300000,
+      "updateInterval" : 3600000,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
         "max" : null,
@@ -4777,8 +4694,8 @@
     },
     "currentUniqueKey" : 10,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 18,
-    "uiHelperValue" : "##CHARTID##_18"
+    "revisionNumber" : 19,
+    "uiHelperValue" : "##CHARTID##_19"
   }
 }, {
   "marshallId" : 30,
@@ -6445,20 +6362,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 30,
-            "transformTimeRange" : "30d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -6494,7 +6397,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "cpu.utilization - Mean(30d) - Sum by host - Exclude x >= 50",
+      "name" : "cpu.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "cpu.utilization",
@@ -6514,20 +6417,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 30,
-            "transformTimeRange" : "30d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -6563,7 +6452,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "memory.utilization - Mean(30d) - Sum by host - Exclude x >= 50",
+      "name" : "memory.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "memory.utilization",
@@ -6593,37 +6482,7 @@
         },
         "fn" : {
           "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
-            "amount" : 30,
-            "transformTimeRange" : "30d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
-            "aggregateGroupBy" : [ {
-              "value" : "host"
-            } ],
-            "collapseGroups" : false,
-            "transformTimeRange" : null
-          },
-          "type" : "aggregation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "SUM"
+          "type" : "MAX"
         },
         "showMe" : false
       }, {
@@ -6645,10 +6504,26 @@
           "type" : "EXCLUDE"
         },
         "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "disk.utilization - Mean by host - Mean(30d) - Sum by host - Exclude x >= 50",
+      "name" : "disk.utilization - Maximum by host - Exclude x >= 50 - Sum by host",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "disk.utilization",
@@ -6768,8 +6643,8 @@
     },
     "currentUniqueKey" : 8,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 16,
-    "uiHelperValue" : "##CHARTID##_16"
+    "revisionNumber" : 17,
+    "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
   "marshallId" : 40,
@@ -6789,20 +6664,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 30,
-            "transformTimeRange" : "30d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -6838,7 +6699,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "cpu.utilization - Mean(30d) - Sum by host - Exclude x >= 50",
+      "name" : "cpu.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "cpu.utilization",
@@ -6858,20 +6719,6 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "amount" : 30,
-            "transformTimeRange" : "30d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "host"
             } ],
@@ -6907,7 +6754,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "memory.utilization - Mean(30d) - Sum by host - Exclude x >= 50",
+      "name" : "memory.utilization - Sum by host - Exclude x >= 50",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "memory.utilization",
@@ -6937,37 +6784,7 @@
         },
         "fn" : {
           "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
-            "amount" : 30,
-            "transformTimeRange" : "30d",
-            "unit" : "d"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "MEAN"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
-            "aggregateGroupBy" : [ {
-              "value" : "host"
-            } ],
-            "collapseGroups" : false,
-            "transformTimeRange" : null
-          },
-          "type" : "aggregation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "SUM"
+          "type" : "MAX"
         },
         "showMe" : false
       }, {
@@ -6989,10 +6806,26 @@
           "type" : "EXCLUDE"
         },
         "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "disk.utilization - Mean by host - Mean(30d) - Sum by host - Exclude x >= 50",
+      "name" : "disk.utilization - Maximum by host - Exclude x >= 50 - Sum by host",
       "queryItems" : [ ],
       "seriesData" : {
         "metric" : "disk.utilization",
@@ -7078,6 +6911,8 @@
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
       "disableThrottle" : true,
       "hideTimestamp" : false,
       "legendColumnConfiguration" : [ {
@@ -7103,8 +6938,8 @@
     },
     "currentUniqueKey" : 8,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 14,
-    "uiHelperValue" : "##CHARTID##_14"
+    "revisionNumber" : 15,
+    "uiHelperValue" : "##CHARTID##_15"
   }
 }, {
   "marshallId" : 41,
