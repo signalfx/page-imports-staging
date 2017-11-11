@@ -2661,9 +2661,7 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "aggregateGroupBy" : [ {
-              "value" : "aws_region"
-            } ],
+            "aggregateGroupBy" : [ ],
             "collapseGroups" : false,
             "transformTimeRange" : null
           },
@@ -2699,9 +2697,7 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "aggregateGroupBy" : [ {
-              "value" : "aws_region"
-            } ],
+            "aggregateGroupBy" : [ ],
             "collapseGroups" : false,
             "transformTimeRange" : null
           },
@@ -2744,9 +2740,7 @@
       "dataManipulations" : [ {
         "direction" : {
           "options" : {
-            "aggregateGroupBy" : [ {
-              "value" : "aws_region"
-            } ],
+            "aggregateGroupBy" : [ ],
             "collapseGroups" : false,
             "transformTimeRange" : null
           },
@@ -2782,6 +2776,40 @@
       "configuration" : {
         "aliases" : { },
         "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "# Total Running Instances",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : "instance.count",
+        "regExStyle" : null
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 9,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
         "maxExtrapolations" : -1
       },
       "dataManipulations" : [ ],
@@ -2792,7 +2820,7 @@
       "seriesData" : { },
       "transient" : true,
       "type" : "plot",
-      "uniqueKey" : 9,
+      "uniqueKey" : 10,
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
@@ -2833,17 +2861,17 @@
         }
       } ]
     },
-    "currentUniqueKey" : 10,
+    "currentUniqueKey" : 11,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 26,
-    "uiHelperValue" : "##CHARTID##_26"
+    "revisionNumber" : 27,
+    "uiHelperValue" : "##CHARTID##_27"
   }
 }, {
   "marshallId" : 19,
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "3. EC2 Cost & Usage Patterns",
   "sf_description" : "",
-  "sf_discoveryQuery" : "cloud_provider_service:EC2.Instances AND cloud_provider:aws",
+  "sf_discoveryQuery" : "",
   "sf_discoverySelectors" : [ "cloud_provider_service:EC2.Instances", "cloud_provider:aws" ],
   "sf_filterAlias" : {
     "variables" : [ {
@@ -4337,6 +4365,7 @@
       "range" : -900000,
       "rangeEnd" : null,
       "sortPreference" : "",
+      "updateInterval" : 300000,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
         "max" : null,
@@ -4350,8 +4379,8 @@
     },
     "currentUniqueKey" : 8,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 16,
-    "uiHelperValue" : "##CHARTID##_16"
+    "revisionNumber" : 17,
+    "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
   "marshallId" : 29,
@@ -4734,6 +4763,7 @@
       "range" : -900000,
       "rangeEnd" : null,
       "sortPreference" : "",
+      "updateInterval" : 300000,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
         "max" : null,
@@ -4747,8 +4777,8 @@
     },
     "currentUniqueKey" : 10,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 17,
-    "uiHelperValue" : "##CHARTID##_17"
+    "revisionNumber" : 18,
+    "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
   "marshallId" : 30,
