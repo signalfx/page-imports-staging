@@ -185,9 +185,9 @@
 }, {
   "marshallId" : 4,
   "marshallMemberOf" : [ 3 ],
-  "sf_chart" : "Used Reservations (by InstanceFamily)",
+  "sf_chart" : "Used Reservations in units of \"small\" (by InstanceFamily)",
   "sf_chartIndex" : 1510291881638,
-  "sf_description" : "This list shows the number of \".small\" instances that could be reserved for each instance family. For details on converting to other sizes, see https://aws.amazon.com/blogs/aws/new-instance-size-flexibility-for-ec2-reserved-instances/",
+  "sf_description" : "This list shows the number of \"small\" instances that could be reserved for each instance family. For details on converting to other sizes, see https://aws.amazon.com/blogs/aws/new-instance-size-flexibility-for-ec2-reserved-instances/",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -246,7 +246,7 @@
         "value" : ""
       } ],
       "seriesData" : {
-        "metric" : "reserved_instance.count",
+        "metric" : "reserved_instance.normalized_count",
         "regExStyle" : null
       },
       "transient" : false,
@@ -326,8 +326,8 @@
     },
     "currentUniqueKey" : 6,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 32,
-    "uiHelperValue" : "##CHARTID##_32"
+    "revisionNumber" : 33,
+    "uiHelperValue" : "##CHARTID##_33"
   }
 }, {
   "marshallId" : 5,
@@ -1814,8 +1814,6 @@
         "direction" : {
           "options" : {
             "aggregateGroupBy" : [ {
-              "value" : "aws_region"
-            }, {
               "value" : "aws_instance_type"
             } ],
             "collapseGroups" : false,
@@ -1941,7 +1939,8 @@
     },
     "currentUniqueKey" : 6,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 31
+    "revisionNumber" : 32,
+    "uiHelperValue" : "##CHARTID##_32"
   }
 }, {
   "marshallId" : 15,
@@ -2824,7 +2823,7 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "line",
+    "chartType" : "area",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
@@ -2863,8 +2862,8 @@
     },
     "currentUniqueKey" : 11,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 27,
-    "uiHelperValue" : "##CHARTID##_27"
+    "revisionNumber" : 28,
+    "uiHelperValue" : "##CHARTID##_28"
   }
 }, {
   "marshallId" : 19,
@@ -3512,7 +3511,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
-      "description" : "null",
+      "description" : null,
       "dimension" : "aws_account_id",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -3529,7 +3528,7 @@
     "time" : {
       "end" : "Now",
       "relative" : true,
-      "start" : "-1d"
+      "start" : "-1w"
     },
     "variables" : [ "AWS Account ID=aws_account_id:" ]
   },
@@ -4677,6 +4676,7 @@
       "disableThrottle" : true,
       "hideTimestamp" : false,
       "legendColumnConfiguration" : null,
+      "maxDecimalPlaces" : 4,
       "range" : -900000,
       "rangeEnd" : null,
       "sortPreference" : "",
@@ -4694,8 +4694,8 @@
     },
     "currentUniqueKey" : 10,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 19,
-    "uiHelperValue" : "##CHARTID##_19"
+    "revisionNumber" : 20,
+    "uiHelperValue" : "##CHARTID##_20"
   }
 }, {
   "marshallId" : 30,
@@ -4882,7 +4882,7 @@
         "direction" : {
           "options" : {
             "aggregateGroupBy" : [ {
-              "value" : "aws_instance_type"
+              "value" : "aws_instance_family"
             }, {
               "value" : "aws_region"
             } ],
@@ -4916,7 +4916,7 @@
         "value" : "unused"
       } ],
       "seriesData" : {
-        "metric" : "reserved_instance.count",
+        "metric" : "reserved_instance.normalized_count",
         "regExStyle" : null
       },
       "transient" : false,
@@ -4934,7 +4934,7 @@
         "direction" : {
           "options" : {
             "aggregateGroupBy" : [ {
-              "value" : "aws_instance_type"
+              "value" : "aws_instance_family"
             }, {
               "value" : "aws_region"
             } ],
@@ -4951,7 +4951,7 @@
       } ],
       "invisible" : true,
       "metricDefinition" : { },
-      "name" : "reserved_instance.cost - Mean by aws_instance_type,aws_region",
+      "name" : "reserved_instance.normalized_cost - Mean by aws_instance_family,aws_region",
       "queryItems" : [ {
         "NOT" : false,
         "iconClass" : "icon-properties",
@@ -4968,7 +4968,7 @@
         "value" : "unused"
       } ],
       "seriesData" : {
-        "metric" : "reserved_instance.cost",
+        "metric" : "reserved_instance.normalized_cost",
         "regExStyle" : null
       },
       "transient" : false,
@@ -5067,8 +5067,8 @@
     },
     "currentUniqueKey" : 20,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 48,
-    "uiHelperValue" : "##CHARTID##_48"
+    "revisionNumber" : 49,
+    "uiHelperValue" : "##CHARTID##_49"
   }
 }, {
   "marshallId" : 31,
