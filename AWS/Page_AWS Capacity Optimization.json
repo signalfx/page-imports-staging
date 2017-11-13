@@ -2937,7 +2937,7 @@
 }, {
   "marshallId" : 20,
   "marshallMemberOf" : [ 19 ],
-  "sf_chart" : "On-Demand Instance Count (by Instance Type)",
+  "sf_chart" : "Count of On-demand instances (by Instance Type)",
   "sf_chartIndex" : 1510288990910,
   "sf_description" : "",
   "sf_type" : "Chart",
@@ -3072,8 +3072,8 @@
     },
     "currentUniqueKey" : 9,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 17,
-    "uiHelperValue" : "##CHARTID##_17"
+    "revisionNumber" : 18,
+    "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
   "marshallId" : 21,
@@ -3358,7 +3358,7 @@
 }, {
   "marshallId" : 23,
   "marshallMemberOf" : [ 19 ],
-  "sf_chart" : "Count of Instances with RI Applied (by Instance Type)",
+  "sf_chart" : "Count of Instances with RIs Applied (by Instance Type)",
   "sf_chartIndex" : 1510289083224,
   "sf_description" : "",
   "sf_type" : "Chart",
@@ -3498,8 +3498,8 @@
     },
     "currentUniqueKey" : 9,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 17,
-    "uiHelperValue" : "##CHARTID##_17"
+    "revisionNumber" : 18,
+    "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
   "marshallId" : 24,
@@ -3511,7 +3511,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
-      "description" : null,
+      "description" : "null",
       "dimension" : "aws_account_id",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -3694,7 +3694,7 @@
 }, {
   "marshallId" : 25,
   "marshallMemberOf" : [ 24 ],
-  "sf_chart" : "On-demand Instances (minimum value over a 30 day period)",
+  "sf_chart" : "On-demand Instances (min value over 30 days)",
   "sf_chartIndex" : 1510278679115,
   "sf_description" : "Potential saving opportunity (by purchasing RI's for On-demand use)",
   "sf_type" : "Chart",
@@ -3827,8 +3827,8 @@
     },
     "currentUniqueKey" : 9,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 40,
-    "uiHelperValue" : "##CHARTID##_40"
+    "revisionNumber" : 41,
+    "uiHelperValue" : "##CHARTID##_41"
   }
 }, {
   "marshallId" : 26,
@@ -4032,10 +4032,10 @@
       } ]
     },
     "currentUniqueKey" : 2,
-    "markdownText" : "<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#4682B4\">\n<font size=\"50\" color=\"white\">RI Utilization</font>\n\n\n</td></tr></table>",
+    "markdownText" : "<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#4682B4\">\n<font size=\"5\" color=\"white\">Reserved Instance (RI) Utilization</font>\n</td></tr>\n</table>\n<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#ffffff\">\n<font size=\"2\" color=\"gray\">These charts identify reservations that have been purchased but are not being used, and estimate wasted cost based on the minimum unused reservations over 30 days.</font>\n</td></tr>\n</table>",
     "relatedDetectors" : [ ],
-    "revisionNumber" : 7,
-    "uiHelperValue" : "##CHARTID##_7"
+    "revisionNumber" : 10,
+    "uiHelperValue" : "##CHARTID##_10"
   }
 }, {
   "marshallId" : 28,
@@ -5958,9 +5958,9 @@
       } ]
     },
     "currentUniqueKey" : 2,
-    "markdownText" : "<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#4682B4\">\n<font size=\"50\" color=\"white\">On-demand to Reserved Instance (RI) Optimization</font>\n\n</td></tr></table>",
-    "revisionNumber" : 11,
-    "uiHelperValue" : "##CHARTID##_11"
+    "markdownText" : "<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#4682B4\">\n<font size=\"5\" color=\"white\">On-demand to Reserved Instance (RI) Optimization</font>\n</td></tr></table>\n<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#ffffff\">\n<font size=\"2\" color=\"gray\">These charts list On-demand instances, and estimate potential saving from purchasing reservations for the minimum number running over the last 30 days.</font>\n</td></tr></table>",
+    "revisionNumber" : 22,
+    "uiHelperValue" : "##CHARTID##_22"
   }
 }, {
   "marshallId" : 36,
@@ -6184,10 +6184,10 @@
       } ]
     },
     "currentUniqueKey" : 2,
-    "markdownText" : "<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#4682B4\">\n<font size=\"50\" color=\"white\">Resource Utilization</font>\n\n\n\n</td></tr></table>",
+    "markdownText" : "<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#4682B4\">\n<font size=\"5\" color=\"white\">Resource (CPU, Memory, and Disk) Utilization</font>\n</td></tr></table>\n<table width=\"100%\" height=\"50%\" rules=\"none\"><tr><td valign=\"middle\" align=\"center\" bgcolor=\"#FFFFFF\">\n<font size=\"2\" color=\"gray\">These charts identify instances for which all three of CPU, Memory, and Disk Utilizations have been below 50% on average over 30 days</font>\n</td></tr></table>",
     "relatedDetectors" : [ ],
-    "revisionNumber" : 9,
-    "uiHelperValue" : "##CHARTID##_9"
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
   "marshallId" : 38,
@@ -6557,7 +6557,7 @@
         "showMe" : false
       } ],
       "expressionText" : "300 -(A+C+F)",
-      "invisible" : false,
+      "invisible" : true,
       "metricDefinition" : { },
       "name" : "300 -(A+C+F) - Sum by host",
       "queryItems" : [ ],
@@ -6575,6 +6575,42 @@
         "extrapolationPolicy" : "NULL_EXTRAPOLATION",
         "maxExtrapolations" : -1
       },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      } ],
+      "expressionText" : "A+C+F",
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "A+C+F - Sum by host",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : null
+      },
+      "transient" : false,
+      "type" : "ratio",
+      "uniqueKey" : 7,
+      "valid" : true,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
       "dataManipulations" : [ ],
       "invisible" : false,
       "metricDefinition" : { },
@@ -6583,7 +6619,7 @@
       "seriesData" : { },
       "transient" : true,
       "type" : "plot",
-      "uniqueKey" : 7,
+      "uniqueKey" : 8,
       "yAxisIndex" : 0
     } ],
     "chartMode" : "heatmap",
@@ -6594,16 +6630,16 @@
       "colorByMetric" : false,
       "colorByValue" : true,
       "colorByValueScale" : [ {
-        "color" : "#ea1849",
-        "gt" : 275
-      }, {
-        "color" : "#ff7e00",
-        "gt" : 225
-      }, {
-        "color" : "#e4ec00",
+        "color" : "#05ce00",
         "gt" : 150
       }, {
-        "color" : "#05ce00"
+        "color" : "#e4ec00",
+        "gt" : 100
+      }, {
+        "color" : "#ff7e00",
+        "gt" : 25
+      }, {
+        "color" : "#ea1849"
       } ],
       "disableThrottle" : true,
       "groupBy" : [ ],
@@ -6641,10 +6677,10 @@
         }
       } ]
     },
-    "currentUniqueKey" : 8,
+    "currentUniqueKey" : 9,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 17,
-    "uiHelperValue" : "##CHARTID##_17"
+    "revisionNumber" : 18,
+    "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
   "marshallId" : 40,
