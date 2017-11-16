@@ -18,7 +18,7 @@
   "sf_dashboard" : "Container Engine",
   "sf_description" : "An overview of Container Engine metrics",
   "sf_discoveryQuery" : "_exists_:gcp_id",
-  "sf_discoverySelectors" : [ "service:appengine", "sf_key:gcp_id" ],
+  "sf_discoverySelectors" : [ "service:container", "sf_key:gcp_id", "_exists_:cluster_name" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "project_id",
@@ -822,7 +822,7 @@
   "sf_dashboard" : "Container Engine Container",
   "sf_description" : "A single container instance metrics",
   "sf_discoveryQuery" : "_exists_:gcp_id",
-  "sf_discoverySelectors" : [ "service:appengine", "sf_key:gcp_id" ],
+  "sf_discoverySelectors" : [ "service:container", "sf_key:gcp_id" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "project_id",
@@ -1471,7 +1471,7 @@
   "sf_dashboard" : "Container Engine Pod",
   "sf_description" : "Metrics for an individual Container Engine pod",
   "sf_discoveryQuery" : "_exists_:gcp_id",
-  "sf_discoverySelectors" : [ "service:appengine", "sf_key:gcp_id" ],
+  "sf_discoverySelectors" : [ "service:container", "sf_key:gcp_id" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "project_id",
