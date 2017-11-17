@@ -17,7 +17,7 @@
   "sf_dashboard" : "App Engine System",
   "sf_description" : "An overview of GCP App Engine system metrics",
   "sf_discoveryQuery" : "_exists_:gcp_id",
-  "sf_discoverySelectors" : [ "service:appengine", "sf_key:gcp_id", "_exists:module_id" ],
+  "sf_discoverySelectors" : [ "service:appengine", "sf_key:gcp_id", "_exists_:module_id" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "project_id",
