@@ -20,7 +20,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "region",
-      "description" : "",
+      "description" : "AWS region",
       "dimension" : "aws_region",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -30,7 +30,7 @@
       "value" : ""
     }, {
       "alias" : "cluster name",
-      "description" : "",
+      "description" : "The name  of the cluster as displayed in AWS",
       "dimension" : "aws_cache_cluster_name",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -40,7 +40,7 @@
       "value" : ""
     }, {
       "alias" : "cluster id",
-      "description" : "ElastiCache cluster",
+      "description" : "ElastiCache Cluster Id as displayed in the AWS API",
       "dimension" : "CacheClusterId",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -56,7 +56,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "region=aws_region:", "cluster name=aws_cache_cluster_name:", "cluster id=CacheClusterId:null" ]
+    "variables" : [ "region=aws_region:", "cluster name=aws_cache_cluster_name:", "cluster id=CacheClusterId:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -6927,7 +6927,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "region",
-      "description" : "",
+      "description" : "AWS region",
       "dimension" : "aws_region",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -6937,7 +6937,7 @@
       "value" : ""
     }, {
       "alias" : "cluster name",
-      "description" : "",
+      "description" : "The name  of the cluster as displayed in AWS",
       "dimension" : "aws_cache_cluster_name",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -6957,12 +6957,12 @@
       "value" : ""
     }, {
       "alias" : "node",
-      "description" : "ElastiCache node",
+      "description" : "ElastiCache node id",
       "dimension" : "CacheNodeId",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
-      "required" : true,
+      "required" : false,
       "restricted" : false,
       "value" : ""
     } ]
@@ -6973,7 +6973,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "region=aws_region:", "cluster name=aws_cache_cluster_name:", "cluster id=CacheClusterId:", "node=CacheNodeId:null" ]
+    "variables" : [ "region=aws_region:", "cluster name=aws_cache_cluster_name:", "cluster id=CacheClusterId:", "node=CacheNodeId:" ]
   },
   "sf_type" : "Dashboard",
   "sf_uiModel" : {
@@ -9660,7 +9660,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "region",
-      "description" : "",
+      "description" : "AWS Region",
       "dimension" : "aws_region",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -9670,7 +9670,7 @@
       "value" : ""
     }, {
       "alias" : "cluster name",
-      "description" : "",
+      "description" : "The name  of the cluster as displayed in AWS",
       "dimension" : "aws_cache_cluster_name",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
@@ -9680,7 +9680,7 @@
       "value" : ""
     }, {
       "alias" : "cluster id",
-      "description" : "",
+      "description" : "ElastiCache Cluster Id as displayed in the AWS API",
       "dimension" : "CacheClusterId",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
