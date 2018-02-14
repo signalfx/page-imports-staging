@@ -3338,35 +3338,17 @@
     "chartType" : "line",
     "allPlots" : [ {
       "queryItems" : [ {
-        "iconClass" : "icon-properties",
-        "value" : "AWS/ECS",
-        "propertyValue" : "AWS/ECS",
         "NOT" : false,
-        "query" : "namespace:\"AWS/ECS\"",
+        "iconClass" : "icon-properties",
         "property" : "namespace",
-        "type" : "property"
-      },{
-        "iconClass" : "icon-properties",
-        "value" : "mean",
-        "propertyValue" : "mean",
-        "NOT" : false,
-        "query" : "stat:mean",
-        "property" : "stat",
-        "type" : "property"
-      }, {
-        "iconClass" : "icon-properties",
-        "value" : "*",
-        "propertyValue" : "*",
-        "key" : "ServiceName",
-        "query" : "ServiceName:*",
-        "property" : "ServiceName",
-        "NOT": true,
-        "type" : "property"
+        "propertyValue" : "AWS/ECS",
+        "type" : "property",
+        "value" : "AWS/ECS"
       } ],
       "uniqueKey" : 1,
       "name" : "",
       "seriesData" : {
-        "metric" : "CPUUtilization"
+        "metric" : "CPUReservation"
       },
       "dataManipulations" : [ {
         "direction" : {
