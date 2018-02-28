@@ -8,10 +8,10 @@
 }, {
   "marshallId" : 2,
   "marshallMemberOf" : [ 1 ],
-  "sf_dashboard" : "Azure App Service",
-  "sf_description" : "",
+  "sf_dashboard" : "Azure App Services",
+  "sf_description" : "Charts for monitoring Azure App Service",
   "sf_discoveryQuery" : "resource_type:\"Microsoft.Web/sites\"",
-  "sf_discoverySelectors" : [ "resource_type:Microsoft.Web/sites" ],
+  "sf_discoverySelectors" : [ "resource_type:Microsoft.Web/sites", "_exists_:azure_resource_name" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "resource_type",
@@ -35,6 +35,17 @@
       "required" : false,
       "restricted" : false,
       "value" : ""
+    }, {
+      "alias" : "azure_resource_id",
+      "applyIfExists" : false,
+      "description" : "",
+      "dimension" : "azure_resource_id",
+      "globalScope" : false,
+      "preferredSuggestions" : [ ],
+      "replaceOnly" : false,
+      "required" : false,
+      "restricted" : false,
+      "value" : ""
     } ]
   },
   "sf_isLocked" : false,
@@ -43,7 +54,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "resource_type=resource_type:Microsoft.Web/sites", "azure_resource_name=azure_resource_name:" ]
+    "variables" : [ "resource_type=resource_type:Microsoft.Web/sites", "azure_resource_name=azure_resource_name:", "azure_resource_id=azure_resource_id:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
