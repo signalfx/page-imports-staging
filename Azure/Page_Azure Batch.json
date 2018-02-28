@@ -281,7 +281,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#05ce00",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
@@ -329,7 +329,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#f47e00",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
@@ -377,7 +377,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#b04600",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
@@ -426,7 +426,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#ff8dd1",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
@@ -521,15 +521,15 @@
       } ]
     },
     "currentUniqueKey" : 7,
-    "revisionNumber" : 4,
-    "uiHelperValue" : "##CHARTID##_4"
+    "revisionNumber" : 5,
+    "uiHelperValue" : "##CHARTID##_5"
   }
 }, {
   "marshallId" : 6,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Tasks Completed",
   "sf_chartIndex" : 1518815417075,
-  "sf_description" : "",
+  "sf_description" : "in the past 5 minutes",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -617,11 +617,11 @@
       "heatmapUseValueAsColor" : false,
       "hideTimestamp" : false,
       "histogramColor" : "#EA1849",
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -3600000,
+      "rangeEnd" : 0,
       "secondaryVisualization" : "NONE",
       "sortPreference" : "",
-      "updateInterval" : 60000,
+      "updateInterval" : 300000,
       "useKMG2" : false,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
@@ -635,8 +635,8 @@
       } ]
     },
     "currentUniqueKey" : 3,
-    "revisionNumber" : 3,
-    "uiHelperValue" : "##CHARTID##_3"
+    "revisionNumber" : 7,
+    "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
   "marshallId" : 7,
@@ -698,7 +698,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#0077c2",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "LATEST_ROLLUP"
       },
@@ -747,7 +747,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#05ce00",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "LATEST_ROLLUP",
         "visualization" : null
@@ -846,8 +846,8 @@
       } ]
     },
     "currentUniqueKey" : 5,
-    "revisionNumber" : 7,
-    "uiHelperValue" : "##CHARTID##_7"
+    "revisionNumber" : 8,
+    "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
   "marshallId" : 8,
@@ -957,7 +957,7 @@
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Number of Cores",
   "sf_chartIndex" : 1518705882855,
-  "sf_description" : "",
+  "sf_description" : "Total number of dedicated cores in the batch account",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -1150,23 +1150,24 @@
     },
     "currentUniqueKey" : 4,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 11,
-    "uiHelperValue" : "##CHARTID##_11"
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
   "marshallId" : 10,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Tasks Failed",
   "sf_chartIndex" : 1518815415758,
-  "sf_description" : "",
+  "sf_description" : "in the past 5 minutes",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#b04600",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
-        "maxExtrapolations" : -1
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : "SUM_ROLLUP"
       },
       "dataManipulations" : [ {
         "direction" : {
@@ -1235,11 +1236,11 @@
       "colorByValueScale" : [ ],
       "hideTimestamp" : false,
       "histogramColor" : "#EA1849",
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -3600000,
+      "rangeEnd" : 0,
       "secondaryVisualization" : "NONE",
       "sortPreference" : "",
-      "updateInterval" : 60000,
+      "updateInterval" : 300000,
       "useKMG2" : false,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
@@ -1253,8 +1254,8 @@
       } ]
     },
     "currentUniqueKey" : 3,
-    "revisionNumber" : 3,
-    "uiHelperValue" : "##CHARTID##_3"
+    "revisionNumber" : 6,
+    "uiHelperValue" : "##CHARTID##_6"
   }
 }, {
   "marshallId" : 11,
@@ -1665,7 +1666,7 @@
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Tasks Started",
   "sf_chartIndex" : 1518815438672,
-  "sf_description" : "",
+  "sf_description" : "in the past 5 minutes",
   "sf_type" : "Chart",
   "sf_uiModel" : {
     "allPlots" : [ {
@@ -1737,14 +1738,16 @@
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
       "colorByValueScale" : [ ],
       "hideTimestamp" : false,
       "histogramColor" : "#EA1849",
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -3600000,
+      "rangeEnd" : 0,
       "secondaryVisualization" : "NONE",
       "sortPreference" : "",
-      "updateInterval" : 60000,
+      "updateInterval" : 300000,
       "useKMG2" : false,
       "yAxisConfigurations" : [ {
         "id" : "yAxis0",
@@ -1758,8 +1761,8 @@
       } ]
     },
     "currentUniqueKey" : 3,
-    "revisionNumber" : 2,
-    "uiHelperValue" : "##CHARTID##_2"
+    "revisionNumber" : 4,
+    "uiHelperValue" : "##CHARTID##_4"
   }
 }, {
   "marshallId" : 14,

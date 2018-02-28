@@ -2711,7 +2711,7 @@
 }, {
   "marshallId" : 19,
   "marshallMemberOf" : [ 1 ],
-  "sf_dashboard" : "Azure Redis Cache Overview",
+  "sf_dashboard" : "Azure Redis Caches",
   "sf_description" : "An overview of multiple Azure Redis Caches",
   "sf_discoveryQuery" : "resource_type:\"Microsoft.Cache/Redis\"",
   "sf_discoverySelectors" : [ "resource_type:Microsoft.Cache/Redis" ],

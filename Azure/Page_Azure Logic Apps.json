@@ -15,7 +15,7 @@
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "Azure Logic App",
   "sf_description" : "Charts for a single Azure Logic App",
-  "sf_discoveryQuery" : "_exists_:azure_resource_name AND resource_type:\"Microsoft.Log/workflows\"",
+  "sf_discoveryQuery" : "_exists_:azure_resource_name AND resource_type:\"Microsoft.Logic/workflows\"",
   "sf_discoverySelectors" : [ "_exists_:azure_resource_name" ],
   "sf_filterAlias" : {
     "variables" : [ {
@@ -1428,7 +1428,7 @@
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "Azure Logic Apps",
   "sf_description" : "An overview for multiple Azure Logic Apps",
-  "sf_discoveryQuery" : "resource_type:\"Microsoft.Log/workflows\"",
+  "sf_discoveryQuery" : "resource_type:\"Microsoft.Logic/workflows\"",
   "sf_discoverySelectors" : [ "resource_type:Microsoft.Logic/workflows" ],
   "sf_filterAlias" : {
     "variables" : [ {
@@ -1524,7 +1524,8 @@
       "configuration" : {
         "aliases" : { },
         "extrapolationPolicy" : "NULL_EXTRAPOLATION",
-        "maxExtrapolations" : -1
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : "AVERAGE_ROLLUP"
       },
       "dataManipulations" : [ {
         "direction" : {
@@ -1650,8 +1651,8 @@
       } ]
     },
     "currentUniqueKey" : 3,
-    "revisionNumber" : 5,
-    "uiHelperValue" : "##CHARTID##_5"
+    "revisionNumber" : 6,
+    "uiHelperValue" : "##CHARTID##_6"
   }
 }, {
   "marshallId" : 14,
