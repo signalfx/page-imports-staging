@@ -16,7 +16,7 @@
   "sf_dashboard" : "Azure Batch Accounts",
   "sf_description" : "Dashboards for Azure Batch",
   "sf_discoveryQuery" : "resource_type:\"Microsoft.Batch/batchAccounts\"",
-  "sf_discoverySelectors" : [ "resource_type:Microsoft.Batch/batchAccounts" ],
+  "sf_discoverySelectors" : [ "resource_type:Microsoft.Batch/batchAccounts", "_exists_:azure_resource_name" ],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "resource_type",
