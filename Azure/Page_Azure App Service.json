@@ -610,7 +610,7 @@
         "id" : "yAxis0",
         "label" : "bytes",
         "max" : null,
-        "min" : null,
+        "min" : 0,
         "name" : "yAxis0",
         "plotlines" : {
           "high" : null,
@@ -944,7 +944,7 @@
         "id" : "yAxis0",
         "label" : "bytes",
         "max" : null,
-        "min" : null,
+        "min" : 0,
         "name" : "yAxis0",
         "plotlines" : {
           "high" : null,
