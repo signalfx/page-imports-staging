@@ -847,18 +847,7 @@
   "sf_discoveryQuery" : "resource_type:\"Microsoft.Sql/servers/elasticpools\"",
   "sf_discoverySelectors" : [ "resource_type:Microsoft.Sql/servers/elasticpools" ],
   "sf_filterAlias" : {
-    "variables" : [ {
-      "alias" : "resource_type",
-      "applyIfExists" : false,
-      "description" : "",
-      "dimension" : "resource_type",
-      "globalScope" : false,
-      "preferredSuggestions" : [ "Microsoft.Sql/servers/elasticpools" ],
-      "replaceOnly" : false,
-      "required" : true,
-      "restricted" : true,
-      "value" : ""
-    } ]
+    "variables" : [ ]
   },
   "sf_isLocked" : false,
   "sf_maxDelayOverride" : -1,
@@ -866,7 +855,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "resource_type=resource_type:Microsoft.Sql/servers/elasticpools" ]
+    "variables" : null
   },
   "sf_type" : "Dashboard",
   "sf_uiModel" : {

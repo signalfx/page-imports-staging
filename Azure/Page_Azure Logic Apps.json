@@ -19,17 +19,6 @@
   "sf_discoverySelectors" : [ "_exists_:azure_resource_name" ],
   "sf_filterAlias" : {
     "variables" : [ {
-      "alias" : "resource_type",
-      "applyIfExists" : false,
-      "description" : "null",
-      "dimension" : "resource_type",
-      "globalScope" : false,
-      "preferredSuggestions" : [ "Microsoft.Logic/workflows" ],
-      "replaceOnly" : false,
-      "required" : true,
-      "restricted" : true,
-      "value" : ""
-    }, {
       "alias" : "azure_resource_name",
       "applyIfExists" : false,
       "description" : "",
@@ -40,6 +29,17 @@
       "required" : true,
       "restricted" : false,
       "value" : ""
+    }, {
+      "alias" : "azure_resource_id",
+      "applyIfExists" : false,
+      "description" : "",
+      "dimension" : "azure_resource_id",
+      "globalScope" : false,
+      "preferredSuggestions" : [ ],
+      "replaceOnly" : false,
+      "required" : false,
+      "restricted" : false,
+      "value" : ""
     } ]
   },
   "sf_isLocked" : false,
@@ -48,7 +48,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "resource_type=resource_type:Microsoft.Logic/workflows", "azure_resource_name=azure_resource_name:" ]
+    "variables" : [ "azure_resource_name=azure_resource_name:", "azure_resource_id=azure_resource_id:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -1431,18 +1431,7 @@
   "sf_discoveryQuery" : "resource_type:\"Microsoft.Logic/workflows\"",
   "sf_discoverySelectors" : [ "resource_type:Microsoft.Logic/workflows" ],
   "sf_filterAlias" : {
-    "variables" : [ {
-      "alias" : "resource_type",
-      "applyIfExists" : false,
-      "description" : "",
-      "dimension" : "resource_type",
-      "globalScope" : false,
-      "preferredSuggestions" : [ "Microsoft.Logic/workflows" ],
-      "replaceOnly" : false,
-      "required" : false,
-      "restricted" : true,
-      "value" : ""
-    } ]
+    "variables" : [ ]
   },
   "sf_isLocked" : false,
   "sf_maxDelayOverride" : -1,
@@ -1450,7 +1439,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "resource_type=resource_type:Microsoft.Logic/workflows" ]
+    "variables" : null
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
