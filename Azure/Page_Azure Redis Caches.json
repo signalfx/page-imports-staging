@@ -2694,7 +2694,7 @@
         "id" : "yAxis0",
         "label" : "mem ratio",
         "max" : 2,
-        "min" : null,
+        "min" : 0,
         "name" : "yAxis0",
         "plotlines" : {
           "high" : 1.5,
