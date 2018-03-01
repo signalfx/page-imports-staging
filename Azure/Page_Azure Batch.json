@@ -19,17 +19,6 @@
   "sf_discoverySelectors" : [ "resource_type:Microsoft.Batch/batchAccounts", "_exists_:azure_resource_name" ],
   "sf_filterAlias" : {
     "variables" : [ {
-      "alias" : "resource_type",
-      "applyIfExists" : false,
-      "description" : "",
-      "dimension" : "resource_type",
-      "globalScope" : false,
-      "preferredSuggestions" : [ "Microsoft.Batch/batchAccounts" ],
-      "replaceOnly" : false,
-      "required" : true,
-      "restricted" : true,
-      "value" : ""
-    }, {
       "alias" : "azure_resource_name",
       "applyIfExists" : false,
       "description" : "",
@@ -59,7 +48,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "resource_type=resource_type:Microsoft.Batch/batchAccounts", "azure_resource_name=azure_resource_name:", "azure_resource_id=azure_resource_id:" ]
+    "variables" : [ "azure_resource_name=azure_resource_name:", "azure_resource_id=azure_resource_id:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -536,7 +525,7 @@
       "configuration" : {
         "aliases" : { },
         "colorOverride" : "#05ce00",
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
@@ -1672,7 +1661,7 @@
     "allPlots" : [ {
       "configuration" : {
         "aliases" : { },
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
