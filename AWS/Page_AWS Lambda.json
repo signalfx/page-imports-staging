@@ -2659,6 +2659,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
+      "applyIfExists" : false,
       "description" : "",
       "dimension" : "aws_account_id",
       "globalScope" : false,
@@ -2670,11 +2671,12 @@
     } ]
   },
   "sf_isLocked" : false,
+  "sf_maxDelayOverride" : -1,
   "sf_savedFilters" : {
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : null
+    "variables" : [ "AWS Account ID=aws_account_id:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -4358,20 +4360,6 @@
       }, {
         "direction" : {
           "options" : {
-            "amount" : 1,
-            "transformTimeRange" : "1h",
-            "unit" : "h"
-          },
-          "type" : "transformation"
-        },
-        "fn" : {
-          "options" : { },
-          "type" : "SUM"
-        },
-        "showMe" : false
-      }, {
-        "direction" : {
-          "options" : {
             "aggregateGroupBy" : [ {
               "value" : "aws_account_id"
             } ],
@@ -4428,15 +4416,19 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "area",
+    "chartType" : "column",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
       "colorByMetric" : false,
+      "dimensionInLegend" : "aws_account_id",
       "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : null,
       "range" : -3600000,
       "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "showLegend" : true,
       "sortPreference" : "",
       "stackedChart" : true,
       "useKMG2" : false,
@@ -4453,8 +4445,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 12,
-    "uiHelperValue" : "##CHARTID##_12"
+    "revisionNumber" : 15,
+    "uiHelperValue" : "##CHARTID##_15"
   }
 }, {
   "marshallId" : 27,
@@ -4687,12 +4679,14 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "area",
+    "chartType" : "column",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
       "colorByMetric" : false,
+      "dimensionInLegend" : "aws_region",
       "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : true,
         "property" : "aws_region"
@@ -4705,6 +4699,8 @@
       } ],
       "range" : -3600000,
       "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "showLegend" : true,
       "sortPreference" : "+aws_region",
       "stackedChart" : true,
       "useKMG2" : false,
@@ -4721,8 +4717,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 11,
-    "uiHelperValue" : "##CHARTID##_11"
+    "revisionNumber" : 13,
+    "uiHelperValue" : "##CHARTID##_13"
   }
 }, {
   "marshallId" : 29,
@@ -6132,12 +6128,14 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "area",
+    "chartType" : "column",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
       "colorByMetric" : false,
+      "dimensionInLegend" : "aws_region",
       "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : true,
         "property" : "aws_region"
@@ -6150,6 +6148,8 @@
       } ],
       "range" : -3600000,
       "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "showLegend" : true,
       "sortPreference" : "+aws_region",
       "stackedChart" : true,
       "useKMG2" : false,
@@ -6166,8 +6166,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 12,
-    "uiHelperValue" : "##CHARTID##_12"
+    "revisionNumber" : 13,
+    "uiHelperValue" : "##CHARTID##_13"
   }
 }, {
   "marshallId" : 37,
@@ -8845,7 +8845,7 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "area",
+    "chartType" : "column",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
@@ -8853,6 +8853,7 @@
       "colorByValue" : false,
       "dimensionInLegend" : "aws_account_id",
       "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "sf_originatingMetric"
@@ -8865,6 +8866,7 @@
       } ],
       "range" : -3600000,
       "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "stackedChart" : true,
@@ -8882,8 +8884,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 16,
-    "uiHelperValue" : "##CHARTID##_16"
+    "revisionNumber" : 17,
+    "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
   "marshallId" : 52,
