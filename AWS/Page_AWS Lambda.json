@@ -348,6 +348,7 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "dimensionInLegend" : "sf_metric",
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "AWSUniqueId"
@@ -373,8 +374,9 @@
         "enabled" : false,
         "property" : "aws_function_version"
       } ],
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "useKMG2" : false,
@@ -391,8 +393,8 @@
     },
     "currentUniqueKey" : 5,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 10,
-    "uiHelperValue" : "##CHARTID##_10"
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
   "marshallId" : 5,
@@ -785,7 +787,9 @@
       "absoluteEnd" : null,
       "absoluteStart" : null,
       "colorByMetric" : false,
+      "colorByValue" : false,
       "dimensionInLegend" : "aws_function_version",
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "AWSUniqueId"
@@ -811,8 +815,9 @@
         "enabled" : true,
         "property" : "aws_function_version"
       } ],
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "-value",
       "useKMG2" : false,
@@ -830,8 +835,8 @@
     },
     "currentUniqueKey" : 5,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 12,
-    "uiHelperValue" : "##CHARTID##_12"
+    "revisionNumber" : 13,
+    "uiHelperValue" : "##CHARTID##_13"
   }
 }, {
   "marshallId" : 7,
@@ -915,6 +920,7 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "dimensionInLegend" : "aws_function_version",
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "AWSUniqueId"
@@ -940,8 +946,9 @@
         "enabled" : true,
         "property" : "aws_function_version"
       } ],
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "stackedChart" : true,
@@ -959,8 +966,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 8,
-    "uiHelperValue" : "##CHARTID##_8"
+    "revisionNumber" : 9,
+    "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
   "marshallId" : 8,
@@ -1258,9 +1265,11 @@
       "colorByMetric" : false,
       "dimensionInLegend" : "FunctionName",
       "disableThrottle" : false,
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : null,
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : false,
       "sortPreference" : "",
       "useKMG2" : false,
@@ -1278,8 +1287,8 @@
     },
     "currentUniqueKey" : 10,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 11,
-    "uiHelperValue" : "##CHARTID##_11"
+    "revisionNumber" : 12,
+    "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
   "marshallId" : 9,
@@ -1600,6 +1609,7 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "dimensionInLegend" : "aws_function_version",
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "AWSUniqueId"
@@ -1625,8 +1635,9 @@
         "enabled" : true,
         "property" : "aws_function_version"
       } ],
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "useKMG2" : false,
@@ -1643,8 +1654,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 7,
-    "uiHelperValue" : "##CHARTID##_7"
+    "revisionNumber" : 8,
+    "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
   "marshallId" : 11,
@@ -2325,6 +2336,7 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "dimensionInLegend" : "aws_function_version",
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "AWSUniqueId"
@@ -2350,8 +2362,9 @@
         "enabled" : true,
         "property" : "aws_function_version"
       } ],
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "useKMG2" : false,
@@ -2368,8 +2381,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 8,
-    "uiHelperValue" : "##CHARTID##_8"
+    "revisionNumber" : 10,
+    "uiHelperValue" : "##CHARTID##_10"
   }
 }, {
   "marshallId" : 16,
@@ -3224,6 +3237,7 @@
       "colorByMetric" : false,
       "dimensionInLegend" : "FunctionName",
       "disableThrottle" : false,
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
         "property" : "AWSUniqueId"
@@ -3246,8 +3260,9 @@
         "enabled" : false,
         "property" : "stat"
       } ],
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "useKMG2" : false,
@@ -3265,8 +3280,8 @@
     },
     "currentUniqueKey" : 5,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 7,
-    "uiHelperValue" : "##CHARTID##_7"
+    "revisionNumber" : 8,
+    "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
   "marshallId" : 21,
@@ -4857,9 +4872,11 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "dimensionInLegend" : "sf_metric",
+      "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : null,
-      "range" : -900000,
-      "rangeEnd" : null,
+      "range" : -1800000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
       "showLegend" : true,
       "sortPreference" : "",
       "stackedChart" : false,
@@ -4877,8 +4894,8 @@
     },
     "currentUniqueKey" : 5,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 8,
-    "uiHelperValue" : "##CHARTID##_8"
+    "revisionNumber" : 9,
+    "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
   "marshallId" : 30,
