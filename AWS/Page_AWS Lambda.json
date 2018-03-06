@@ -4419,7 +4419,7 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "column",
+    "chartType" : "area",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
@@ -4448,8 +4448,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 15,
-    "uiHelperValue" : "##CHARTID##_15"
+    "revisionNumber" : 16,
+    "uiHelperValue" : "##CHARTID##_16"
   }
 }, {
   "marshallId" : 27,
@@ -4682,7 +4682,7 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "column",
+    "chartType" : "area",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
@@ -4720,8 +4720,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 13,
-    "uiHelperValue" : "##CHARTID##_13"
+    "revisionNumber" : 14,
+    "uiHelperValue" : "##CHARTID##_14"
   }
 }, {
   "marshallId" : 29,
@@ -6131,7 +6131,7 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "column",
+    "chartType" : "area",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
@@ -6169,8 +6169,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 13,
-    "uiHelperValue" : "##CHARTID##_13"
+    "revisionNumber" : 14,
+    "uiHelperValue" : "##CHARTID##_14"
   }
 }, {
   "marshallId" : 37,
@@ -8848,7 +8848,7 @@
       "yAxisIndex" : 0
     } ],
     "chartMode" : "graph",
-    "chartType" : "column",
+    "chartType" : "area",
     "chartconfig" : {
       "absoluteEnd" : null,
       "absoluteStart" : null,
@@ -8887,8 +8887,8 @@
     },
     "currentUniqueKey" : 3,
     "relatedDetectors" : [ ],
-    "revisionNumber" : 17,
-    "uiHelperValue" : "##CHARTID##_17"
+    "revisionNumber" : 18,
+    "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
   "marshallId" : 52,
