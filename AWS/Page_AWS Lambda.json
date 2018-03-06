@@ -21,6 +21,7 @@
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "AWS Account ID",
+      "applyIfExists" : false,
       "description" : "",
       "dimension" : "aws_account_id",
       "globalScope" : false,
@@ -31,8 +32,9 @@
       "value" : ""
     }, {
       "alias" : "Function Name",
+      "applyIfExists" : false,
       "description" : "",
-      "dimension" : "aws_function_name",
+      "dimension" : "FunctionName",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
@@ -42,11 +44,12 @@
     } ]
   },
   "sf_isLocked" : false,
+  "sf_maxDelayOverride" : -1,
   "sf_savedFilters" : {
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : null
+    "variables" : [ "AWS Account ID=aws_account_id:", "Function Name=FunctionName:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
@@ -8899,7 +8902,7 @@
       "alias" : "Function Name",
       "applyIfExists" : false,
       "description" : "",
-      "dimension" : "aws_function_name",
+      "dimension" : "FunctionName",
       "globalScope" : false,
       "preferredSuggestions" : [ ],
       "replaceOnly" : false,
@@ -8914,7 +8917,7 @@
     "density" : 0.0,
     "sources" : null,
     "time" : null,
-    "variables" : [ "Function Name=aws_function_name:" ]
+    "variables" : [ "Function Name=FunctionName:" ]
   },
   "sf_selectedEventOverlays" : [ ],
   "sf_type" : "Dashboard",
