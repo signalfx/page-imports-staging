@@ -11,7 +11,7 @@
   "sf_dashboard" : "Azure App Services",
   "sf_description" : "Charts for monitoring Azure App Service",
   "sf_discoveryQuery" : "resource_type:\"Microsoft.Web/sites\"",
-  "sf_discoverySelectors" : [ "resource_type:Microsoft.Web/sites", "_exists_:azure_resource_name" ],
+  "sf_discoverySelectors" : [ "resource_type:Microsoft.Web/sites"],
   "sf_filterAlias" : {
     "variables" : [ {
       "alias" : "azure_resource_name",
