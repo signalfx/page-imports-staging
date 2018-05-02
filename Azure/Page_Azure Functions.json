@@ -620,11 +620,50 @@
       "hideTimestamp" : false,
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "aws_region"
+      }, {
+        "enabled" : false,
+        "property" : "lambda_arn"
+      }, {
+        "enabled" : false,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_version"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_name"
+      }, {
         "enabled" : true,
         "property" : "function_wrapper_version"
       }, {
         "enabled" : true,
         "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_function_name"
@@ -1268,6 +1307,30 @@
       "dimensionInLegend" : "azure_resource_name",
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : false,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_version"
+      }, {
         "enabled" : false,
         "property" : "primary_aggregation_type"
       }, {
@@ -3971,6 +4034,27 @@
       "hideTimestamp" : false,
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
         "enabled" : true,
         "property" : "azure_region_name"
       }, {
@@ -3979,6 +4063,9 @@
       }, {
         "enabled" : true,
         "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_function_name"
@@ -4255,6 +4342,30 @@
       "dimensionInLegend" : "sf_metric",
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : false,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_version"
+      }, {
         "enabled" : true,
         "property" : "azure_region_name"
       }, {
@@ -4263,6 +4374,9 @@
       }, {
         "enabled" : true,
         "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_function_name"
@@ -5051,7 +5165,7 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "colorByValue" : false,
-      "dimensionInLegend" : "azure_function_name",
+      "dimensionInLegend" : "FunctionName",
       "disableThrottle" : false,
       "hideTimestamp" : false,
       "histogramColor" : "#ea1849",
@@ -5307,6 +5421,45 @@
       "dimensionInLegend" : "sf_metric",
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : true,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : true,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "lambda_arn"
+      }, {
+        "enabled" : true,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : true,
+        "property" : "aws_region"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_version"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_name"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
+      }, {
         "enabled" : true,
         "property" : "azure_function_name"
       }, {
@@ -5663,10 +5816,25 @@
         "property" : "azure_region"
       }, {
         "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : false,
         "property" : "function_wrapper_version"
       }, {
         "enabled" : false,
         "property" : "metric_source"
+      }, {
+        "enabled" : false,
+        "property" : "azure_function_app_name"
+      }, {
+        "enabled" : false,
+        "property" : "azure_funtion_app_name"
       }, {
         "enabled" : false,
         "property" : "is_Azure_Function"
@@ -5825,6 +5993,27 @@
         "property" : "azure_region"
       }, {
         "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : false,
+        "property" : "function_wrapper_version"
+      }, {
+        "enabled" : false,
+        "property" : "metric_source"
+      }, {
+        "enabled" : false,
+        "property" : "azure_function_app_name"
+      }, {
+        "enabled" : false,
+        "property" : "azure_funtion_app_name"
+      }, {
+        "enabled" : false,
         "property" : "is_Azure_Function"
       } ],
       "range" : -3600000,
@@ -5949,13 +6138,28 @@
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
+        "property" : "aws_region"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
         "property" : "function_wrapper_version"
       }, {
         "enabled" : false,
         "property" : "metric_source"
       }, {
+        "enabled" : false,
+        "property" : "azure_function_app_name"
+      }, {
         "enabled" : true,
         "property" : "azure_function_name"
+      }, {
+        "enabled" : false,
+        "property" : "azure_funtion_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_region_name"
@@ -6198,10 +6402,49 @@
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_name"
+      }, {
+        "enabled" : true,
+        "property" : "lambda_arn"
+      }, {
+        "enabled" : true,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : true,
+        "property" : "aws_region"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_version"
+      }, {
+        "enabled" : true,
         "property" : "function_wrapper_version"
       }, {
         "enabled" : true,
         "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_function_name"
@@ -6866,13 +7109,28 @@
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
-        "property" : "azure_function_name"
+        "property" : "FunctionName"
       }, {
         "enabled" : false,
-        "property" : "azure_region_name"
+        "property" : "sf_originatingMetric"
       }, {
         "enabled" : false,
-        "property" : "azure_resource_name"
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_name"
       } ],
       "maxDecimalPlaces" : 4,
       "maxDelay" : null,
@@ -6994,10 +7252,49 @@
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
         "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : false,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "aws_region"
+      }, {
+        "enabled" : false,
+        "property" : "lambda_arn"
+      }, {
+        "enabled" : false,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_version"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_name"
+      }, {
+        "enabled" : false,
         "property" : "function_wrapper_version"
       }, {
         "enabled" : false,
         "property" : "metric_source"
+      }, {
+        "enabled" : false,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : false,
         "property" : "azure_function_name"
@@ -7129,9 +7426,33 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "colorByValue" : false,
-      "dimensionInLegend" : "azure_function_name",
+      "dimensionInLegend" : "FunctionName",
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_name"
+      }, {
         "enabled" : true,
         "property" : "azure_region_name"
       }, {
@@ -7140,6 +7461,9 @@
       }, {
         "enabled" : true,
         "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_function_name"
@@ -7336,7 +7660,7 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "colorByValue" : false,
-      "dimensionInLegend" : "azure_function_name",
+      "dimensionInLegend" : "FunctionName",
       "disableThrottle" : false,
       "hideTimestamp" : false,
       "histogramColor" : "#ea1849",
@@ -7578,8 +7902,28 @@
       "heatmapUseValueAsColor" : false,
       "hideTimestamp" : false,
       "histogramColor" : "#ea1849",
-      "legendColumnConfiguration" : [
-      TODO ],
+      "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      } ],
       "maxDecimalPlaces" : 4,
       "range" : -3600000,
       "rangeEnd" : 0,
@@ -7718,8 +8062,31 @@
       "colorByMetric" : false,
       "dimensionInLegend" : "sf_metric",
       "histogramColor" : "#ea1849",
-      "legendColumnConfiguration" : [
-      TODO ],
+      "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_version"
+      } ],
       "range" : -900000,
       "rangeEnd" : null,
       "secondaryVisualization" : "NONE",
@@ -7936,14 +8303,62 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "colorByValue" : false,
-      "dimensionInLegend" : "azure_function_name",
+      "dimensionInLegend" : "FunctionName",
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : true,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : true,
+        "property" : "aws_execution_env"
+      }, {
         "enabled" : true,
         "property" : "function_wrapper_version"
       }, {
         "enabled" : true,
+        "property" : "lambda_arn"
+      }, {
+        "enabled" : true,
         "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : true,
+        "property" : "aws_region"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_version"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_name"
+      }, {
+        "enabled" : true,
+        "property" : "aws_tag_service"
+      }, {
+        "enabled" : true,
+        "property" : "aws_function_qualifier"
+      }, {
+        "enabled" : true,
+        "property" : "azure_function_app_name"
       }, {
         "enabled" : true,
         "property" : "azure_function_name"
@@ -8225,9 +8640,45 @@
       "axisPrecision" : null,
       "colorByMetric" : false,
       "colorByValue" : false,
-      "dimensionInLegend" : "azure_function_name",
+      "dimensionInLegend" : "aws_function_name",
       "histogramColor" : "#ea1849",
       "legendColumnConfiguration" : [ {
+        "enabled" : false,
+        "property" : "FunctionName"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "namespace"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : false,
+        "property" : "Resource"
+      }, {
+        "enabled" : false,
+        "property" : "stat"
+      }, {
+        "enabled" : false,
+        "property" : "AWSUniqueId"
+      }, {
+        "enabled" : false,
+        "property" : "lambda_arn"
+      }, {
+        "enabled" : false,
+        "property" : "aws_account_id"
+      }, {
+        "enabled" : false,
+        "property" : "aws_region"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_version"
+      }, {
+        "enabled" : false,
+        "property" : "aws_function_name"
+      }, {
         "enabled" : true,
         "property" : "azure_function_name"
       }, {
