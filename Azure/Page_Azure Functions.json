@@ -2251,7 +2251,7 @@
 }, {
   "marshallId" : 16,
   "marshallMemberOf" : [ 3 ],
-  "sf_chart" : "Active Functions Apps",
+  "sf_chart" : "Active Function Apps",
   "sf_chartIndex" : 1500403836324,
   "sf_description" : "sum over 1m",
   "sf_type" : "Chart",
@@ -2259,7 +2259,7 @@
     "allPlots" : [ {
       "configuration" : {
         "aliases" : { },
-        "extrapolationPolicy" : "ZERO_EXTRAPOLATION",
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "rollupPolicy" : "SUM_ROLLUP"
       },
