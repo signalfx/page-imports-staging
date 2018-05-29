@@ -524,7 +524,7 @@
       "name" : "completed_tasks",
       "queryItems" : [ ],
       "seriesData" : {
-        "metric" : "counter.spark.job.num_completed_tasks",
+        "metric" : "gauge.spark.job.num_completed_tasks",
         "regExStyle" : null
       },
       "transient" : false,
