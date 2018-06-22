@@ -5561,7 +5561,7 @@
       "_originalLabel" : "A",
       "configuration" : {
         "aliases" : { },
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "LAST_VALUE_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "prefix" : "",
         "suffix" : "",
@@ -11941,7 +11941,7 @@
       "_originalLabel" : "A",
       "configuration" : {
         "aliases" : { },
-        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "extrapolationPolicy" : "LAST_VALUE_EXTRAPOLATION",
         "maxExtrapolations" : -1,
         "prefix" : "",
         "suffix" : "",
