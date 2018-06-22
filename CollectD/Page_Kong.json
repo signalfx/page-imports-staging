@@ -45,7 +45,7 @@
     "time" : {
       "end" : "Now",
       "relative" : true,
-      "start" : "-30m"
+      "start" : "-1h"
     },
     "variables" : [ "Service Name=service_name:", "Service ID=service_id:" ]
   },
@@ -2041,7 +2041,7 @@
         "showMe" : false
       } ],
       "invisible" : false,
-      "name" : "",
+      "name" : "errors",
       "queryItems" : [ {
         "NOT" : false,
         "iconClass" : "icon-properties",
@@ -2681,7 +2681,7 @@
     "time" : {
       "end" : "Now",
       "relative" : true,
-      "start" : "-30m"
+      "start" : "-1h"
     },
     "variables" : [ "API Name=api_name:", "API ID=api_id:" ]
   },
@@ -5303,7 +5303,7 @@
     "time" : {
       "end" : "Now",
       "relative" : true,
-      "start" : "-30m"
+      "start" : "-1h"
     },
     "variables" : [ "Kong Instance=host:" ]
   },
@@ -12228,7 +12228,7 @@
     "time" : {
       "end" : "Now",
       "relative" : true,
-      "start" : "-30m"
+      "start" : "-1h"
     },
     "variables" : [ "Route ID=route_id:" ]
   },
@@ -13285,7 +13285,7 @@
         "showMe" : false
       } ],
       "invisible" : false,
-      "name" : "",
+      "name" : "errors",
       "queryItems" : [ {
         "NOT" : false,
         "iconClass" : "icon-properties",
