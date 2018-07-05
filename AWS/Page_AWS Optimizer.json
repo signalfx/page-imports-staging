@@ -1681,7 +1681,10 @@
       "absoluteStart" : null,
       "colorByMetric" : false,
       "colorByValue" : true,
-      "colorByValueScale" : [ ],
+      "colorByValueScale" : [
+        {"color":"#ea1849","gt":0},
+        {"color":"#6bd37e","lte":0}
+      ],
       "disableThrottle" : true,
       "hideTimestamp" : false,
       "histogramColor" : "#ea1849",
