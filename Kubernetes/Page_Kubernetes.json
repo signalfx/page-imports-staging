@@ -118,10 +118,246 @@
       "row" : 2,
       "sizeX" : 4,
       "sizeY" : 1
+    }, {
+      "col" : 0,
+      "options" : {
+        "chartIndex" : 1532357680134,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 6,
+      "sizeY" : 1
+    }, {
+      "col" : 6,
+      "options" : {
+        "chartIndex" : 1532357824824,
+        "id" : 0
+      },
+      "row" : 3,
+      "sizeX" : 6,
+      "sizeY" : 1
     } ]
   }
 }, {
   "marshallId" : 4,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "% Memory Capacity Used",
+  "sf_chartIndex" : 1532357824824,
+  "sf_description" : "",
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allPlots" : [ {
+      "_originalLabel" : "D",
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "amount" : 1,
+            "transformTimeRange" : "1m",
+            "unit" : "m"
+          },
+          "type" : "transformation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      } ],
+      "invisible" : true,
+      "metricDefinition" : { },
+      "name" : "memory usage per node",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : "container_memory_usage_bytes",
+        "regExStyle" : null
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 4,
+      "yAxisIndex" : 0
+    }, {
+      "_originalLabel" : "E",
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "amount" : 1,
+            "transformTimeRange" : "1m",
+            "unit" : "m"
+          },
+          "type" : "transformation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      } ],
+      "invisible" : true,
+      "metricDefinition" : { },
+      "name" : "memory capacity per node",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : "machine_memory_bytes",
+        "regExStyle" : null
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 5,
+      "yAxisIndex" : 0
+    }, {
+      "_originalLabel" : "F",
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "suffix" : "%",
+        "unitType" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : {
+            "scaleAmount" : 100
+          },
+          "type" : "SCALE"
+        },
+        "showMe" : false
+      } ],
+      "expressionText" : "D/E",
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : null
+      },
+      "transient" : false,
+      "type" : "ratio",
+      "uniqueKey" : 6,
+      "valid" : true,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 7,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "colorByValueScale" : [ {
+        "color" : "#ea1849",
+        "gt" : 80
+      }, {
+        "color" : "#eac24b",
+        "gt" : 60,
+        "lte" : 80
+      }, {
+        "color" : "#e5e517",
+        "gt" : 40,
+        "lte" : 60
+      }, {
+        "color" : "#acef7f",
+        "gt" : 20,
+        "lte" : 40
+      }, {
+        "color" : "#6bd37e",
+        "lte" : 20
+      } ],
+      "hideTimestamp" : false,
+      "histogramColor" : "#ea1849",
+      "includeZero" : true,
+      "legendColumnConfiguration" : null,
+      "maxDecimalPlaces" : 3,
+      "range" : -3600000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "-value",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "% memory used",
+        "max" : 110,
+        "min" : null,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 8,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 18,
+    "uiHelperValue" : "##CHARTID##_18"
+  }
+}, {
+  "marshallId" : 5,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "CPU Use per Pod (%)",
   "sf_chartIndex" : 1458427414608,
@@ -217,7 +453,7 @@
     "uiHelperValue" : "##CHARTID##_11"
   }
 }, {
-  "marshallId" : 5,
+  "marshallId" : 6,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Total # Pods",
   "sf_chartIndex" : 1458313290939,
@@ -341,7 +577,7 @@
     "uiHelperValue" : "##CHARTID##_10"
   }
 }, {
-  "marshallId" : 6,
+  "marshallId" : 7,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Memory Use per Pod (bytes)",
   "sf_chartIndex" : 1458427696376,
@@ -438,7 +674,7 @@
     "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
-  "marshallId" : 7,
+  "marshallId" : 8,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Highest Memory Use per Pod (bytes)",
   "sf_chartIndex" : 1458317740707,
@@ -564,7 +800,7 @@
     "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
-  "marshallId" : 8,
+  "marshallId" : 9,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Total # CPU Cores",
   "sf_chartIndex" : 1458409586006,
@@ -671,7 +907,7 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 9,
+  "marshallId" : 10,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Highest CPU Use per Pod (%)",
   "sf_chartIndex" : 1458318231023,
@@ -815,7 +1051,265 @@
     "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
-  "marshallId" : 10,
+  "marshallId" : 11,
+  "marshallMemberOf" : [ 3 ],
+  "sf_chart" : "% CPU Capacity Used",
+  "sf_chartIndex" : 1532357680134,
+  "sf_description" : "",
+  "sf_type" : "Chart",
+  "sf_uiModel" : {
+    "allDetectorDecorators" : [ ],
+    "allPlotConstructs" : [ ],
+    "allPlotProgramText" : [ "find(refresh=300000,query='(aws_service:quantizer) AND sf_metric:collectd.aggregation.cpu-average.cpu.idle AND sf_organizationID:SYNTH_ORG_ID AND NOT sf_metric:_*') -> fetch -> groupby('aws_Name') -> stats:!mean -> _SF_PLOT_KEY_SYNTH_CHART_ID_0_1_5=id", "_SF_PLOT_KEY_SYNTH_CHART_ID_0_2_5_MACROBLOCK=[?A,!OUT]{100  -  ?A->!OUT};_SF_PLOT_KEY_SYNTH_CHART_ID_0_2_5_MACROBLOCK:!OUT->groupby()->select(count=5):!top->groupby('aws_Name')->_SF_PLOT_KEY_SYNTH_CHART_ID_0_2_5=id->publish(defaultSource='_SF_PLOT_KEY_SYNTH_CHART_ID_0_2_5',metric='_SF_PLOT_KEY_SYNTH_CHART_ID_0_2_5',sf_uiAnalyticsDerivedMetric=1,sf_uiHelper='SYNTH_CHART_ID_0_5');_SF_PLOT_KEY_SYNTH_CHART_ID_0_1_5->?A:_SF_PLOT_KEY_SYNTH_CHART_ID_0_2_5_MACROBLOCK" ],
+    "allPlots" : [ {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "amount" : 1,
+            "transformTimeRange" : "1m",
+            "unit" : "m"
+          },
+          "type" : "transformation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : true,
+      "metricDefinition" : { },
+      "name" : "centi-core usage per node",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : "container_cpu_utilization",
+        "regExStyle" : null
+      },
+      "sf_programText" : "",
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 1,
+      "valid" : false,
+      "yAxisIndex" : 0
+    }, {
+      "_originalLabel" : "G",
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "rollupPolicy" : null
+      },
+      "dataManipulations" : [ {
+        "direction" : {
+          "options" : {
+            "aggregateGroupBy" : [ {
+              "value" : "host"
+            } ],
+            "collapseGroups" : false,
+            "transformTimeRange" : null
+          },
+          "type" : "aggregation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "SUM"
+        },
+        "showMe" : false
+      }, {
+        "direction" : {
+          "options" : {
+            "amount" : 1,
+            "transformTimeRange" : "1m",
+            "unit" : "m"
+          },
+          "type" : "transformation"
+        },
+        "fn" : {
+          "options" : { },
+          "type" : "MEAN"
+        },
+        "showMe" : false
+      } ],
+      "focusNext" : false,
+      "invisible" : true,
+      "metricDefinition" : { },
+      "name" : "# cores per node",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : "machine_cpu_cores",
+        "regExStyle" : null
+      },
+      "transient" : false,
+      "type" : "plot",
+      "uniqueKey" : 7,
+      "yAxisIndex" : 0
+    }, {
+      "_originalLabel" : "L",
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1,
+        "suffix" : "%",
+        "unitType" : null
+      },
+      "dataManipulations" : [ ],
+      "expressionText" : "A/G",
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "CPU Capacity % Used Per Node",
+      "queryItems" : [ ],
+      "seriesData" : {
+        "metric" : null
+      },
+      "transient" : false,
+      "type" : "ratio",
+      "uniqueKey" : 12,
+      "valid" : true,
+      "yAxisIndex" : 0
+    }, {
+      "configuration" : {
+        "aliases" : { },
+        "extrapolationPolicy" : "NULL_EXTRAPOLATION",
+        "maxExtrapolations" : -1
+      },
+      "dataManipulations" : [ ],
+      "invisible" : false,
+      "metricDefinition" : { },
+      "name" : "New Plot",
+      "queryItems" : [ ],
+      "seriesData" : { },
+      "transient" : true,
+      "type" : "plot",
+      "uniqueKey" : 13,
+      "yAxisIndex" : 0
+    } ],
+    "chartMode" : "graph",
+    "chartType" : "area",
+    "chartconfig" : {
+      "absoluteEnd" : null,
+      "absoluteStart" : null,
+      "colorByMetric" : false,
+      "colorByValue" : false,
+      "colorByValueScale" : [ {
+        "color" : "#ea1849",
+        "gt" : 80
+      }, {
+        "color" : "#eac24b",
+        "gt" : 60,
+        "lte" : 80
+      }, {
+        "color" : "#e5e517",
+        "gt" : 40,
+        "lte" : 60
+      }, {
+        "color" : "#acef7f",
+        "gt" : 20,
+        "lte" : 40
+      }, {
+        "color" : "#6bd37e",
+        "lte" : 20
+      } ],
+      "disableThrottle" : false,
+      "histogramColor" : "#ea1849",
+      "includeZero" : true,
+      "legendColumnConfiguration" : [ {
+        "enabled" : true,
+        "property" : "host"
+      }, {
+        "enabled" : false,
+        "property" : "sf_originatingMetric"
+      }, {
+        "enabled" : false,
+        "property" : "sf_metric"
+      }, {
+        "enabled" : true,
+        "property" : "gcp_id"
+      }, {
+        "enabled" : true,
+        "property" : "kubernetes_cluster"
+      }, {
+        "enabled" : true,
+        "property" : "container_image"
+      }, {
+        "enabled" : true,
+        "property" : "kubernetes_pod_name"
+      }, {
+        "enabled" : true,
+        "property" : "kubernetes_namespace"
+      }, {
+        "enabled" : true,
+        "property" : "metric_source"
+      }, {
+        "enabled" : true,
+        "property" : "container_name"
+      }, {
+        "enabled" : true,
+        "property" : "container_spec_name"
+      }, {
+        "enabled" : true,
+        "property" : "kubernetes_pod_uid"
+      }, {
+        "enabled" : true,
+        "property" : "kubernetes_node"
+      }, {
+        "enabled" : true,
+        "property" : "container_id"
+      }, {
+        "enabled" : true,
+        "property" : "machine_id"
+      }, {
+        "enabled" : true,
+        "property" : "AWSUniqueId"
+      } ],
+      "maxDecimalPlaces" : 4,
+      "range" : -3600000,
+      "rangeEnd" : 0,
+      "secondaryVisualization" : "NONE",
+      "sortPreference" : "-value",
+      "updateInterval" : "",
+      "yAxisConfigurations" : [ {
+        "id" : "yAxis0",
+        "label" : "cpu usage %",
+        "max" : 110,
+        "min" : 0,
+        "name" : "yAxis0",
+        "plotlines" : {
+          "high" : null,
+          "low" : null
+        }
+      } ]
+    },
+    "currentUniqueKey" : 14,
+    "relatedDetectors" : [ ],
+    "revisionNumber" : 36,
+    "sf_detectorDecorators" : [ ],
+    "uiHelperValue" : "##CHARTID##_36"
+  }
+}, {
+  "marshallId" : 12,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Pod Network Errors by Interface",
   "sf_chartIndex" : 1458314739641,
@@ -957,7 +1451,7 @@
     "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
-  "marshallId" : 11,
+  "marshallId" : 13,
   "marshallMemberOf" : [ 3 ],
   "sf_chart" : "Total Memory (bytes)",
   "sf_chartIndex" : 1458418158282,
@@ -1071,7 +1565,7 @@
     "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
-  "marshallId" : 12,
+  "marshallId" : 14,
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "K8s Pods",
   "sf_description" : "",
@@ -1180,8 +1674,8 @@
     } ]
   }
 }, {
-  "marshallId" : 13,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 15,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "Top 10 Pods by Major Page Faults",
   "sf_chartIndex" : 1458309595352,
   "sf_description" : "",
@@ -1306,8 +1800,8 @@
     "uiHelperValue" : "##CHARTID##_14"
   }
 }, {
-  "marshallId" : 14,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 16,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "Network Errors / sec",
   "sf_chartIndex" : 1458249567362,
   "sf_description" : "",
@@ -1454,8 +1948,8 @@
     "revisionNumber" : 7
   }
 }, {
-  "marshallId" : 15,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 17,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "% CPU Limit Used per Pod",
   "sf_chartIndex" : 1522868212503,
   "sf_description" : "Based on Pod spec's resources.limits.cpu value if present, otherwise chart will be blank.",
@@ -1695,8 +2189,8 @@
     "uiHelperValue" : "##CHARTID##_25"
   }
 }, {
-  "marshallId" : 16,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 18,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "Top 10 Pods by % CPU Used",
   "sf_chartIndex" : 1458250918748,
   "sf_description" : "",
@@ -1909,8 +2403,8 @@
     "uiHelperValue" : "##CHARTID##_23"
   }
 }, {
-  "marshallId" : 17,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 19,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "# Active Pods",
   "sf_chartIndex" : 1531235295335,
   "sf_description" : "This may include \"pause\" containers used internally by K8s",
@@ -2046,8 +2540,8 @@
     "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
-  "marshallId" : 18,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 20,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "Network Throughput (bytes/sec)",
   "sf_chartIndex" : 1458250298509,
   "sf_description" : "",
@@ -2192,8 +2686,8 @@
     "revisionNumber" : 9
   }
 }, {
-  "marshallId" : 19,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 21,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "Top 10 Pods by Average Container Memory Usage",
   "sf_chartIndex" : 1458248490790,
   "sf_description" : "",
@@ -2316,8 +2810,8 @@
     "uiHelperValue" : "##CHARTID##_10"
   }
 }, {
-  "marshallId" : 20,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 22,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "% Memory Used per Pod",
   "sf_chartIndex" : 1458248905408,
   "sf_description" : "Based on Kubernetes resource limits.  If no limits, will be blank.",
@@ -2512,8 +3006,8 @@
     "uiHelperValue" : "##CHARTID##_18"
   }
 }, {
-  "marshallId" : 21,
-  "marshallMemberOf" : [ 12 ],
+  "marshallId" : 23,
+  "marshallMemberOf" : [ 14 ],
   "sf_chart" : "Top 10 Pods by # Containers",
   "sf_chartIndex" : 1458248282528,
   "sf_description" : "This may include \"pause\" containers used internally by K8s",
@@ -2654,7 +3148,7 @@
     "uiHelperValue" : "##CHARTID##_20"
   }
 }, {
-  "marshallId" : 22,
+  "marshallId" : 24,
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "K8s Nodes",
   "sf_description" : "",
@@ -2763,8 +3257,8 @@
     } ]
   }
 }, {
-  "marshallId" : 23,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 25,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Top Nodes by # Pods",
   "sf_chartIndex" : 1458313290939,
   "sf_description" : "",
@@ -2906,8 +3400,8 @@
     "uiHelperValue" : "##CHARTID##_14"
   }
 }, {
-  "marshallId" : 24,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 26,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Network Throughput (bytes/sec)",
   "sf_chartIndex" : 1531179794941,
   "sf_description" : "",
@@ -3092,8 +3586,8 @@
     "uiHelperValue" : "##CHARTID##_10"
   }
 }, {
-  "marshallId" : 25,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 27,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Top Nodes by Network Usage",
   "sf_chartIndex" : 1531179865388,
   "sf_description" : "bytes in + bytes out",
@@ -3315,8 +3809,8 @@
     "uiHelperValue" : "##CHARTID##_14"
   }
 }, {
-  "marshallId" : 26,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 28,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Top Nodes by Memory",
   "sf_chartIndex" : 1531178199757,
   "sf_description" : "",
@@ -3480,8 +3974,8 @@
     "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
-  "marshallId" : 27,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 29,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "# Nodes",
   "sf_chartIndex" : 1531177124517,
   "sf_description" : "",
@@ -3602,8 +4096,8 @@
     "uiHelperValue" : "##CHARTID##_15"
   }
 }, {
-  "marshallId" : 28,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 30,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Network Errors by Interface",
   "sf_chartIndex" : 1458314739641,
   "sf_description" : "Network receive and transmit errors from pods on this node",
@@ -3749,8 +4243,8 @@
     "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
-  "marshallId" : 29,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 31,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Top 10 Nodes by Memory Capacity Used",
   "sf_chartIndex" : 1532118195182,
   "sf_description" : "per node",
@@ -3986,8 +4480,8 @@
     "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
-  "marshallId" : 30,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 32,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Top 10 Nodes by CPU Capacity Usage %",
   "sf_chartIndex" : 1531177983554,
   "sf_description" : "",
@@ -4262,8 +4756,8 @@
     "uiHelperValue" : "##CHARTID##_34"
   }
 }, {
-  "marshallId" : 31,
-  "marshallMemberOf" : [ 22 ],
+  "marshallId" : 33,
+  "marshallMemberOf" : [ 24 ],
   "sf_chart" : "Total Memory (bytes)",
   "sf_chartIndex" : 1531178150899,
   "sf_description" : "",
@@ -4397,7 +4891,7 @@
     "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
-  "marshallId" : 32,
+  "marshallId" : 34,
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "K8s Operations",
   "sf_description" : "",
@@ -4531,8 +5025,8 @@
     } ]
   }
 }, {
-  "marshallId" : 33,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 35,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Net Pods Desired by Replication Controller",
   "sf_chartIndex" : 1504985040860,
   "sf_description" : "",
@@ -4662,8 +5156,8 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 34,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 36,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Available Pods by Deployment",
   "sf_chartIndex" : 1505086092502,
   "sf_description" : "",
@@ -4770,8 +5264,8 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 35,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 37,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Daemon Sets by Stage",
   "sf_chartIndex" : 1504985320971,
   "sf_type" : "Chart",
@@ -4972,8 +5466,8 @@
     "uiHelperValue" : "##CHARTID##_3"
   }
 }, {
-  "marshallId" : 36,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 38,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Container Restarts by Pod",
   "sf_chartIndex" : 1504983743195,
   "sf_description" : "",
@@ -5071,8 +5565,8 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 37,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 39,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Net Pods Desired by Replica Set",
   "sf_chartIndex" : 1504984341541,
   "sf_description" : "",
@@ -5202,8 +5696,8 @@
     "uiHelperValue" : "##CHARTID##_6"
   }
 }, {
-  "marshallId" : 38,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 40,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Pods by Phase",
   "sf_chartIndex" : 1504982415444,
   "sf_description" : "",
@@ -5520,8 +6014,8 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 39,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 41,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Deployments Not at Spec",
   "sf_chartIndex" : 1504983431707,
   "sf_description" : "",
@@ -5689,8 +6183,8 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 40,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 42,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Container Restarts by Node",
   "sf_chartIndex" : 1504981442309,
   "sf_description" : "",
@@ -5814,8 +6308,8 @@
     "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
-  "marshallId" : 41,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 43,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Desired Pods by Deployment",
   "sf_chartIndex" : 1504982762234,
   "sf_type" : "Chart",
@@ -5919,8 +6413,8 @@
     "uiHelperValue" : "##CHARTID##_6"
   }
 }, {
-  "marshallId" : 42,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 44,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Container Restarts",
   "sf_chartIndex" : 1504981590087,
   "sf_description" : "",
@@ -6022,8 +6516,8 @@
     "uiHelperValue" : "##CHARTID##_5"
   }
 }, {
-  "marshallId" : 43,
-  "marshallMemberOf" : [ 32 ],
+  "marshallId" : 45,
+  "marshallMemberOf" : [ 34 ],
   "sf_chart" : "Pods by Phase",
   "sf_chartIndex" : 1504982002981,
   "sf_description" : "",
@@ -6335,7 +6829,7 @@
     "uiHelperValue" : "##CHARTID##_4"
   }
 }, {
-  "marshallId" : 44,
+  "marshallId" : 46,
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "K8s Pod",
   "sf_discoveryQuery" : "_exists_:kubernetes_pod_name AND _exists_:kubernetes_cluster",
@@ -6444,8 +6938,8 @@
     } ]
   }
 }, {
-  "marshallId" : 45,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 47,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "Network Errors / sec",
   "sf_chartIndex" : 1458249567362,
   "sf_description" : "",
@@ -6591,8 +7085,8 @@
     "uiHelperValue" : "##CHARTID##_7"
   }
 }, {
-  "marshallId" : 46,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 48,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "% CPU Used per Container",
   "sf_chartIndex" : 1458250918748,
   "sf_description" : "",
@@ -6688,8 +7182,8 @@
     "uiHelperValue" : "##CHARTID##_19"
   }
 }, {
-  "marshallId" : 47,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 49,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "% Memory Used per Container",
   "sf_chartIndex" : 1458248905408,
   "sf_description" : "Based on Kubernetes resource limits.  If no limits, will be blank.",
@@ -6878,8 +7372,8 @@
     "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
-  "marshallId" : 48,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 50,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "% CPU Limit Used per Container",
   "sf_chartIndex" : 1522868212503,
   "sf_description" : "Based on Pod spec's resources.limits.cpu value if present, otherwise chart will be blank.",
@@ -7118,8 +7612,8 @@
     "uiHelperValue" : "__OBJECT_ID___23"
   }
 }, {
-  "marshallId" : 49,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 51,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "Network Throughput (bytes/sec)",
   "sf_chartIndex" : 1458250298509,
   "sf_description" : "",
@@ -7263,8 +7757,8 @@
     "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
-  "marshallId" : 50,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 52,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "Memory Used per Container (Bytes)",
   "sf_chartIndex" : 1458248490790,
   "sf_description" : "",
@@ -7361,8 +7855,8 @@
     "uiHelperValue" : "##CHARTID##_9"
   }
 }, {
-  "marshallId" : 51,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 53,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "# Active Containers",
   "sf_chartIndex" : 1458248282528,
   "sf_description" : "This may include \"pause\" containers used internally by K8s",
@@ -7468,8 +7962,8 @@
     "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
-  "marshallId" : 52,
-  "marshallMemberOf" : [ 44 ],
+  "marshallId" : 54,
+  "marshallMemberOf" : [ 46 ],
   "sf_chart" : "Major Page Faults per Container",
   "sf_chartIndex" : 1458309595352,
   "sf_description" : "",
@@ -7572,7 +8066,7 @@
     "uiHelperValue" : "##CHARTID##_13"
   }
 }, {
-  "marshallId" : 53,
+  "marshallId" : 55,
   "marshallMemberOf" : [ 2 ],
   "sf_dashboard" : "K8s Clusters",
   "sf_discoveryQuery" : "sf_metric:cpu.utilization AND _exists_:kubernetes_cluster",
@@ -7670,8 +8164,8 @@
     } ]
   }
 }, {
-  "marshallId" : 54,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 56,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "# Containers per Cluster",
   "sf_chartIndex" : 1458501499296,
   "sf_description" : "",
@@ -7774,8 +8268,8 @@
     "uiHelperValue" : "##CHARTID##_11"
   }
 }, {
-  "marshallId" : 55,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 57,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "Memory Usage",
   "sf_chartIndex" : 1458675384013,
   "sf_description" : "per cluster",
@@ -7885,8 +8379,8 @@
     "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
-  "marshallId" : 56,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 58,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "CPU Capacity Used",
   "sf_chartIndex" : 1532117392575,
   "sf_description" : "per cluster",
@@ -8063,8 +8557,8 @@
     "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
-  "marshallId" : 57,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 59,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "Network Receieve Errors",
   "sf_chartIndex" : 1532119936237,
   "sf_description" : "per cluster",
@@ -8164,8 +8658,8 @@
     "uiHelperValue" : "##CHARTID##_8"
   }
 }, {
-  "marshallId" : 58,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 60,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "# Nodes per Cluster",
   "sf_chartIndex" : 1458501808727,
   "sf_description" : "",
@@ -8287,8 +8781,8 @@
     "uiHelperValue" : "##CHARTID##_14"
   }
 }, {
-  "marshallId" : 59,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 61,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "# Clusters",
   "sf_chartIndex" : 1458317097334,
   "sf_description" : "",
@@ -8406,8 +8900,8 @@
     "uiHelperValue" : "##CHARTID##_12"
   }
 }, {
-  "marshallId" : 60,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 62,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "Memory Capacity Used",
   "sf_chartIndex" : 1532117639714,
   "sf_description" : "per cluster",
@@ -8600,8 +9094,8 @@
     "uiHelperValue" : "##CHARTID##_17"
   }
 }, {
-  "marshallId" : 61,
-  "marshallMemberOf" : [ 53 ],
+  "marshallId" : 63,
+  "marshallMemberOf" : [ 55 ],
   "sf_chart" : "Network Transmit Errors",
   "sf_chartIndex" : 1458502325166,
   "sf_description" : "per cluster",
